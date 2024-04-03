@@ -1,42 +1,42 @@
 params:
 - description: package (and its children) under test
   name: package
-  type: string
+  type: 1
 - default: ./...
   description: 'packages to test (default: ./...)'
   name: packages
-  type: string
+  type: 1
 - default: .
   description: path to the directory to use as context.
   name: context
-  type: string
+  type: 1
 - default: latest
   description: golang version to use for tests
   name: version
-  type: string
+  type: 1
 - default: -race -cover -v
   description: flags to use for the test command
   name: flags
-  type: string
+  type: 1
 - default: linux
   description: running program's operating system target
   name: GOOS
-  type: string
+  type: 1
 - default: amd64
   description: running program's architecture target
   name: GOARCH
-  type: string
+  type: 1
 - default: auto
   description: value of module support
   name: GO111MODULE
-  type: string
+  type: 1
 - default: ''
   description: Go caching directory path
   name: GOCACHE
-  type: string
+  type: 1
 - default: ''
   description: Go mod caching directory path
   name: GOMODCACHE
-  type: string
+  type: 1
 visibility:
   showToUser: true

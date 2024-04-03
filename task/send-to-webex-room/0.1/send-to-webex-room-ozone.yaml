@@ -1,13 +1,13 @@
 params:
-  - default: webex-token-secret
-    description: secret name of the Webex Bot API token
-    name: webex-token-secret-name
-    type: string
-  - description: ID of room
-    name: room-id
-    type: string
-  - description: plain text message
-    name: message
-    type: string
+- default: webex-token-secret
+  description: secret name of the Webex Bot API token
+  name: webex-token-secret-name
+  type: 1
+- description: ID of room
+  name: room-id
+  type: 1
+- description: plain text message
+  name: message
+  type: 1
 visibility:
   showToUser: true

@@ -6,7 +6,7 @@ params:
 
       "
     name: orka-token-secret
-    type: string
+    type: 1
   - default: token
     description:
       "The name of the key in the Orka token secret, which holds the authentication
@@ -14,7 +14,7 @@ params:
 
       "
     name: orka-token-secret-key
-    type: string
+    type: 1
   - default: orka-vm-name
     description:
       "The name of the config map, which stores the name of the generated
@@ -22,7 +22,7 @@ params:
 
       "
     name: orka-vm-name-config
-    type: string
+    type: 1
   - default: vm-name
     description:
       "The name of the key in the VM name config map, which stores the name
@@ -30,12 +30,12 @@ params:
 
       "
     name: orka-vm-name-config-key
-    type: string
+    type: 1
   - default: ghcr.io/macstadium/orka-tekton-runner:2022-06-29-ec3440a7@sha256:d7cfb75ea082a927e36c131aa96e96bfcacd23f62fdaf33f5b37320b86baf50e
     description: "The name of the docker image which runs the task step.
 
       "
     name: orka-tekton-runner-image
-    type: string
+    type: 1
 visibility:
   showToUser: true

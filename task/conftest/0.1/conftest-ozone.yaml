@@ -1,14 +1,14 @@
 params:
-  - name: files
-    type: string
-  - default: policy
-    name: policy
-    type: string
-  - default: stdout
-    name: output
-    type: string
-  - default: []
-    name: args
-    type: array
+- name: files
+  type: 1
+- default: policy
+  name: policy
+  type: 1
+- default: stdout
+  name: output
+  type: 1
+- default: []
+  name: args
+  type: array
 visibility:
   showToUser: true

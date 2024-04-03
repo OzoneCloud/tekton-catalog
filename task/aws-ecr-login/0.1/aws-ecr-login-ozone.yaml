@@ -6,6 +6,6 @@ params:
 
       "
     name: region
-    type: string
+    type: 1
 visibility:
   showToUser: true

@@ -2,7 +2,7 @@ params:
   - default: project
     description: The project directory under the workspace runner-dir
     name: project-dir
-    type: string
+    type: 1
   - default:
       - --help
     description: The arguments to pass ansible-runner
@@ -11,6 +11,6 @@ params:
   - default: /tekton/home
     description: Absolute path to the user's home directory.
     name: user-home
-    type: string
+    type: 1
 visibility:
   showToUser: true

@@ -3,12 +3,12 @@ params:
 
       '
     name: bucketName
-    type: string
+    type: 1
   - description: "The project with which your bucket will be associated.
 
       "
     name: project
-    type: string
+    type: 1
   - default: STANDARD
     description:
       "The storage class for the new bucket. STANDARD, NEARLINE, COLDLINE,
@@ -16,13 +16,13 @@ params:
 
       "
     name: storageClass
-    type: string
+    type: 1
   - default: ""
     description: "The region, dual-region, or multi-region for the new bucket.
 
       "
     name: region
-    type: string
+    type: 1
   - default: "false"
     description:
       'Set this to "true" if the bucket should be created with bucket-level
@@ -30,7 +30,7 @@ params:
 
       '
     name: uniformAccess
-    type: string
+    type: 1
   - default: service_account.json
     description:
       "The path inside the credentials workspace to the GOOGLE_APPLICATION_CREDENTIALS
@@ -38,6 +38,6 @@ params:
 
       "
     name: serviceAccountPath
-    type: string
+    type: 1
 visibility:
   showToUser: true

@@ -1,17 +1,16 @@
 params:
-  - default: .
-    description:
-      The directory containing the app, relative to the source repository
-      root
-    name: DIRECTORY
-    type: string
-  - default: empty-dir-volume
-    description: The name of the volume for caching Maven artifacts and base image layers
-    name: CACHE
-    type: string
-  - default: "false"
-    description: Whether to allow insecure registry
-    name: INSECUREREGISTRY
-    type: string
+- default: .
+  description: The directory containing the app, relative to the source repository
+    root
+  name: DIRECTORY
+  type: 1
+- default: empty-dir-volume
+  description: The name of the volume for caching Maven artifacts and base image layers
+  name: CACHE
+  type: 1
+- default: 'false'
+  description: Whether to allow insecure registry
+  name: INSECUREREGISTRY
+  type: 1
 visibility:
   showToUser: true

@@ -2,7 +2,7 @@ params:
   - default: "false"
     description: Disable tower ssl verification
     name: SSLVERIFY
-    type: string
+    type: 1
   - default:
       - --help
     description: The tower-cli commands to tun
@@ -11,10 +11,10 @@ params:
   - default: ""
     description: The Ansible Tower host
     name: HOST
-    type: string
+    type: 1
   - default: tower-creds
     description: The Ansible Tower secret with credentials
     name: tower-secret
-    type: string
+    type: 1
 visibility:
   showToUser: true

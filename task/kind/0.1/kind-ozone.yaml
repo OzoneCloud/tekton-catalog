@@ -4,6 +4,6 @@ params:
     type: array
   - description: Task runtime image. Should typically contain the kind CLI (https://kind.sigs.k8s.io)
     name: image
-    type: string
+    type: 1
 visibility:
   showToUser: true

@@ -1,32 +1,30 @@
 params:
-  - description: "Secret containing the address:port tuple for StackRox Central
+- description: 'Secret containing the address:port tuple for StackRox Central
 
-      (example - rox.stackrox.io:443)
+    (example - rox.stackrox.io:443)
 
-      "
-    name: rox_central_endpoint
-    type: string
-  - description: Secret containing the StackRox API token with CI permissions
-    name: rox_api_token
-    type: string
-  - description:
-      "Full name of image to scan (example -- gcr.io/rox/sample:5.0-rc1)
+    '
+  name: rox_central_endpoint
+  type: 1
+- description: Secret containing the StackRox API token with CI permissions
+  name: rox_api_token
+  type: 1
+- description: 'Full name of image to scan (example -- gcr.io/rox/sample:5.0-rc1)
 
-      "
-    name: image
-    type: string
-  - default: json
-    description: Output format (json | csv | pretty)
-    name: output_format
-    type: string
-  - default: "false"
-    description:
-      'When set to `"true"`, skip verifying the TLS certs of the Central
+    '
+  name: image
+  type: 1
+- default: json
+  description: Output format (json | csv | pretty)
+  name: output_format
+  type: 1
+- default: 'false'
+  description: 'When set to `"true"`, skip verifying the TLS certs of the Central
 
-      endpoint.  Defaults to `"false"`.
+    endpoint.  Defaults to `"false"`.
 
-      '
-    name: insecure-skip-tls-verify
-    type: string
+    '
+  name: insecure-skip-tls-verify
+  type: 1
 visibility:
   showToUser: true

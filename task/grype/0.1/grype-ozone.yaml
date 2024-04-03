@@ -5,6 +5,6 @@ params:
   - default: docker.io/anchore/grype@sha256:06d97d03bded18b392e08177a84f3436376d18b6c22fd8fde45c2f38f04fd6ed
     description: Grype image to be used
     name: GRYPE_IMAGE
-    type: string
+    type: 1
 visibility:
   showToUser: true

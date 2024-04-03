@@ -4,14 +4,14 @@ params:
 
       "
     name: GITHUB_HOST_URL
-    type: string
+    type: 1
   - default: ""
     description:
       "The API path prefix, GitHub Enterprise has a prefix e.g. /api/v3
 
       "
     name: API_PATH_PREFIX
-    type: string
+    type: 1
   - description:
       "The GitHub issue or pull request URL where we want to add a new
 
@@ -19,11 +19,11 @@ params:
 
       "
     name: REQUEST_URL
-    type: string
+    type: 1
   - description: "The actual comment to add.
 
       "
     name: COMMENT
-    type: string
+    type: 1
 visibility:
   showToUser: true

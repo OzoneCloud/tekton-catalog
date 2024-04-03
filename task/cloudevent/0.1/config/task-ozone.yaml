@@ -1,21 +1,21 @@
 params:
   - description: Sink to send Event to
     name: sink
-    type: string
+    type: 1
   - description: Event ID to use
     name: eventID
-    type: string
+    type: 1
   - default: tekton.cloudevent.message
     description: The Event Type to use
     name: eventType
-    type: string
+    type: 1
   - default: ""
     description: Source of the CloudEvent
     name: source
-    type: string
+    type: 1
   - default: ""
     description: The payload of the Event
     name: data
-    type: string
+    type: 1
 visibility:
   showToUser: true

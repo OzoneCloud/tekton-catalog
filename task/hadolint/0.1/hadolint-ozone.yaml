@@ -2,16 +2,16 @@ params:
   - default: ""
     description: ignore rules.
     name: ignore-rules
-    type: string
+    type: 1
   - default: ./Dockerfile
     description: Dockerfile path.
     name: dockerfile-path
-    type: string
+    type: 1
   - default: tty
     description:
-      The output format for the results [tty | json | checkstyle | codeclimate
-      | gitlab_codeclimate | codacy] (default tty).
+      " The output format for the results [tty | json | checkstyle | codeclimate
+      | gitlab_codeclimate | codacy] (default tty)."
     name: output-format
-    type: string
+    type: 1
 visibility:
   showToUser: true

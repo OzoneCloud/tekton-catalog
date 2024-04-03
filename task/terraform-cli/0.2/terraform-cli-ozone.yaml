@@ -7,22 +7,22 @@ params:
   - default: terraform-creds
     description: The terraform secret with credentials
     name: terraform-secret
-    type: string
+    type: 1
   - default: docker.io/hashicorp/terraform:light
     description: the terraform image to use
     name: image
-    type: string
+    type: 1
   - default: ""
     description: HTTP proxy server for non-SSL requests
     name: httpProxy
-    type: string
+    type: 1
   - default: ""
     description: HTTPS proxy server for SSL requests
     name: httpsProxy
-    type: string
+    type: 1
   - default: ""
     description: no proxy - opt out of proxying HTTP/HTTPS requests
     name: noProxy
-    type: string
+    type: 1
 visibility:
   showToUser: true

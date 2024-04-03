@@ -1,12 +1,12 @@
 params:
-- default: .
-  name: files
-  type: string
-- default: stdout
-  name: output
-  type: string
-- default: []
-  name: args
-  type: array
+  - default: .
+    name: files
+    type: 1
+  - default: stdout
+    name: output
+    type: 1
+  - default: []
+    name: args
+    type: array
 visibility:
   showToUser: true

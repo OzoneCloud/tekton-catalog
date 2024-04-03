@@ -1,17 +1,17 @@
 params:
-  - default: "#!/usr/bin/python
+- default: '#!/usr/bin/python
 
 
-      import openshift as oc
+    import openshift as oc
 
 
-      print('OpenShift client version: {}'.format(oc.get_client_version()))
+    print(''OpenShift client version: {}''.format(oc.get_client_version()))
 
-      print('OpenShift server version: {}'.format(oc.get_server_version()))
+    print(''OpenShift server version: {}''.format(oc.get_server_version()))
 
-      "
-    description: Python script to be executed
-    name: SCRIPT
-    type: string
+    '
+  description: Python script to be executed
+  name: SCRIPT
+  type: 1
 visibility:
   showToUser: true

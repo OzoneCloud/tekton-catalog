@@ -1,20 +1,20 @@
 params:
 - description: The Orka base image to use for the VM config.
   name: base-image
-  type: string
+  type: 1
 - default: ghcr.io/macstadium/orka-tekton-runner:2022-06-29-ec3440a7@sha256:d7cfb75ea082a927e36c131aa96e96bfcacd23f62fdaf33f5b37320b86baf50e
   description: 'The name of the docker image which runs the task step.
 
     '
   name: orka-tekton-runner-image
-  type: string
+  type: 1
 - default: '3'
   description: 'The number of CPU cores to dedicate for the VM. Must be 3, 4, 6, 8,
     12, or 24.
 
     '
   name: cpu-count
-  type: string
+  type: 1
 - default: '3'
   description: 'The number of vCPUs for the VM. Must equal the number of CPUs, when
     CPU is less than or equal to 3.
@@ -23,40 +23,40 @@ params:
 
     '
   name: vcpu-count
-  type: string
+  type: 1
 - default: 'false'
   description: Enables or disables VNC for the VM.
   name: vnc-console
-  type: string
+  type: 1
 - default: ''
   description: "\"Inject custom metadata to the VM (on Intel nodes only). You need\
     \ to provide the metadata in format:\n[\n  { key: firstKey, value: firstValue\
     \ },\n  { key: secondKey, value: secondsValue }\n]\"\n"
   name: vm-metadata
-  type: string
+  type: 1
 - default: ''
   description: Assign an owned macOS system serial number to the VM (on Intel nodes
     only).
   name: system-serial
-  type: string
+  type: 1
 - default: 'false'
   description: Enables or disables GPU passthrough for the VM (on Intel nodes only).
   name: gpu-passthrough
-  type: string
+  type: 1
 - default: ''
   description: When specified, the VM is preferred to be deployed to a node marked
     with this tag.
   name: tag
-  type: string
+  type: 1
 - default: 'false'
   description: VM is required to be deployed to a node marked with tag specified above.
   name: tag-required
-  type: string
+  type: 1
 - default: default
   description: When set to 'most-allocated', the deployed VM will be scheduled to
     nodes having most of their resources allocated.
   name: scheduler
-  type: string
+  type: 1
 - description: 'The script to run inside of the VM. The script will be prepended with
     the following
 
@@ -73,7 +73,7 @@ params:
 
     '
   name: script
-  type: string
+  type: 1
 - default: 'true'
   description: 'Specifies whether to copy build artifacts from the Orka VM back to
     the workspace.
@@ -83,47 +83,47 @@ params:
 
     '
   name: copy-build
-  type: string
+  type: 1
 - default: 'false'
   description: Enables verbose logging for all connection activity to the VM.
   name: verbose
-  type: string
+  type: 1
 - default: orka-creds
   description: The name of the secret holding your Orka credentials.
   name: orka-creds-secret
-  type: string
+  type: 1
 - default: email
   description: 'The name of the key in the Orka user credentials secret for the email
     address associated with the Orka user.
 
     '
   name: orka-creds-email-key
-  type: string
+  type: 1
 - default: password
   description: 'The name of the key in the Orka credentials secret for the password
     associated with the Orka user.
 
     '
   name: orka-creds-password-key
-  type: string
+  type: 1
 - default: 'false'
   description: 'Specifies whether the SSH credentials secret contains an SSH key,
     as opposed to a password.
 
     '
   name: ssh-key
-  type: string
+  type: 1
 - default: orka-ssh-creds
   description: The name of the secret holding your VM SSH credentials.
   name: ssh-secret
-  type: string
+  type: 1
 - default: username
   description: 'The name of the key in the VM SSH credentials secret for the username
     associated with the macOS VM.
 
     '
   name: ssh-username-key
-  type: string
+  type: 1
 - default: password
   description: 'The name of the key in the VM SSH credentials secret for the password
 
@@ -136,10 +136,10 @@ params:
 
     '
   name: ssh-password-key
-  type: string
+  type: 1
 - default: /tekton/home
   description: Absolute path to the user's home directory.
   name: user-home
-  type: string
+  type: 1
 visibility:
   showToUser: true
