@@ -1,15 +1,15 @@
 params:
-- default: .
-  name: chart
-  type: 1
-- default: policy
-  name: policy
-  type: 1
-- default: stdout
-  name: output
-  type: 1
-- default: []
-  name: args
-  type: array
+  - default: .
+    name: chart
+    type: 1
+  - default: policy
+    name: policy
+    type: 1
+  - default: stdout
+    name: output
+    type: 1
+  - default: []
+    name: args
+    type: array
 visibility:
-  showToUser: true
+  showToUser: false

@@ -1,37 +1,39 @@
 params:
-- default: api.github.com
-  description: 'The GitHub host, adjust this if you run a GitHub enteprise.
+  - default: api.github.com
+    description: "The GitHub host, adjust this if you run a GitHub enteprise.
 
-    '
-  name: GITHUB_HOST_URL
-  type: 1
-- default: ''
-  description: 'The API path prefix, GitHub Enterprise has a prefix e.g. /api/v3
+      "
+    name: GITHUB_HOST_URL
+    type: 1
+  - default: ""
+    description:
+      "The API path prefix, GitHub Enterprise has a prefix e.g. /api/v3
 
-    '
-  name: API_PATH_PREFIX
-  type: 1
-- description: 'The GitHub issue or pull request URL where we want to add labels.
+      "
+    name: API_PATH_PREFIX
+    type: 1
+  - description:
+      "The GitHub issue or pull request URL where we want to add labels.
 
-    '
-  name: REQUEST_URL
-  type: 1
-- description: 'The actual labels to add.
+      "
+    name: REQUEST_URL
+    type: 1
+  - description: "The actual labels to add.
 
-    '
-  name: LABELS
-  type: array
-- default: github
-  description: 'Name of the secret holding the github-token.
+      "
+    name: LABELS
+    type: array
+  - default: github
+    description: "Name of the secret holding the github-token.
 
-    '
-  name: GITHUB_TOKEN_SECRET
-  type: 1
-- default: token
-  description: 'Name of the secret key holding the github-token.
+      "
+    name: GITHUB_TOKEN_SECRET
+    type: 1
+  - default: token
+    description: "Name of the secret key holding the github-token.
 
-    '
-  name: GITHUB_TOKEN_SECRET_KEY
-  type: 1
+      "
+    name: GITHUB_TOKEN_SECRET_KEY
+    type: 1
 visibility:
-  showToUser: true
+  showToUser: false
