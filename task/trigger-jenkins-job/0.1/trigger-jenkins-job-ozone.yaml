@@ -15,4 +15,4 @@ params:
     name: JOB_PARAMS
     type: array
 visibility:
-  showToUser: true
+  showToUser: false

@@ -17,4 +17,4 @@ params:
     name: tower-secret
     type: 1
 visibility:
-  showToUser: true
+  showToUser: false

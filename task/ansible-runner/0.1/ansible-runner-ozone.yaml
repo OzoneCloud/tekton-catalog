@@ -13,4 +13,4 @@ params:
     name: user-home
     type: 1
 visibility:
-  showToUser: true
+  showToUser: false

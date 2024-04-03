@@ -6,4 +6,4 @@ params:
     name: image
     type: 1
 visibility:
-  showToUser: true
+  showToUser: fasle

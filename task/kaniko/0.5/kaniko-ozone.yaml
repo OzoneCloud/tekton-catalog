@@ -18,4 +18,4 @@ params:
     name: BUILDER_IMAGE
     type: 1
 visibility:
-  showToUser: true
+  showToUser: false

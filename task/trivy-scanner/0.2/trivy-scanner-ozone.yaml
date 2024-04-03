@@ -14,4 +14,4 @@ params:
     name: AIR_GAPPED_ENABLED
     type: 1
 visibility:
-  showToUser: true
+  showToUser: false

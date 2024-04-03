@@ -25,4 +25,4 @@ params:
     name: noProxy
     type: 1
 visibility:
-  showToUser: true
+  showToUser: false

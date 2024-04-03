@@ -13,4 +13,4 @@ params:
     name: TASKS
     type: array
 visibility:
-  showToUser: true
+  showToUser: false

@@ -7,4 +7,4 @@ params:
     name: GRYPE_IMAGE
     type: 1
 visibility:
-  showToUser: true
+  showToUser: false

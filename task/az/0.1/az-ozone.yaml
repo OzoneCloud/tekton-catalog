@@ -7,4 +7,4 @@ params:
     name: ARGS
     type: array
 visibility:
-  showToUser: true
+  showToUser: false
