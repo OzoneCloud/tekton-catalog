@@ -1,12 +1,18 @@
 params:
-- description: Token of the bot through
-  name: bot-token-secret
-  type: 1
-- description: ID of the chat to send the message towards
-  name: chat-id
-  type: 1
-- description: The message to notify about
-  name: message
-  type: 1
+  - description: Token of the bot through
+    name: bot-token-secret
+    required: false
+    type: 1
+    value: ""
+  - description: ID of the chat to send the message towards
+    name: chat-id
+    required: false
+    type: 1
+    value: ""
+  - description: The message to notify about
+    name: message
+    required: false
+    type: 1
+    value: ""
 visibility:
   showToUser: true

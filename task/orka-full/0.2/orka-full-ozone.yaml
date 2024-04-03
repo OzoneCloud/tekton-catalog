@@ -1,145 +1,202 @@
 params:
-- description: The Orka base image to use for the VM config.
-  name: base-image
-  type: 1
-- default: ghcr.io/macstadium/orka-tekton-runner:2022-06-29-ec3440a7@sha256:d7cfb75ea082a927e36c131aa96e96bfcacd23f62fdaf33f5b37320b86baf50e
-  description: 'The name of the docker image which runs the task step.
+  - description: The Orka base image to use for the VM config.
+    name: base-image
+    required: false
+    type: 1
+    value: ""
+  - default: ghcr.io/macstadium/orka-tekton-runner:2022-06-29-ec3440a7@sha256:d7cfb75ea082a927e36c131aa96e96bfcacd23f62fdaf33f5b37320b86baf50e
+    description: "The name of the docker image which runs the task step.
 
-    '
-  name: orka-tekton-runner-image
-  type: 1
-- default: '3'
-  description: 'The number of CPU cores to dedicate for the VM. Must be 3, 4, 6, 8,
-    12, or 24.
+      "
+    name: orka-tekton-runner-image
+    required: false
+    type: 1
+    value: ""
+  - default: "3"
+    description:
+      "The number of CPU cores to dedicate for the VM. Must be 3, 4, 6, 8,
+      12, or 24.
 
-    '
-  name: cpu-count
-  type: 1
-- default: '3'
-  description: 'The number of vCPUs for the VM. Must equal the number of CPUs, when
-    CPU is less than or equal to 3.
+      "
+    name: cpu-count
+    required: false
+    type: 1
+    value: ""
+  - default: "3"
+    description:
+      "The number of vCPUs for the VM. Must equal the number of CPUs, when
+      CPU is less than or equal to 3.
 
-    Otherwise, must equal half of or exactly the number of CPUs specified.
+      Otherwise, must equal half of or exactly the number of CPUs specified.
 
-    '
-  name: vcpu-count
-  type: 1
-- default: 'false'
-  description: Enables or disables VNC for the VM.
-  name: vnc-console
-  type: 1
-- default: ''
-  description: "\"Inject custom metadata to the VM (on Intel nodes only). You need\
-    \ to provide the metadata in format:\n[\n  { key: firstKey, value: firstValue\
-    \ },\n  { key: secondKey, value: secondsValue }\n]\"\n"
-  name: vm-metadata
-  type: 1
-- default: ''
-  description: Assign an owned macOS system serial number to the VM (on Intel nodes
-    only).
-  name: system-serial
-  type: 1
-- default: 'false'
-  description: Enables or disables GPU passthrough for the VM (on Intel nodes only).
-  name: gpu-passthrough
-  type: 1
-- default: ''
-  description: When specified, the VM is preferred to be deployed to a node marked
-    with this tag.
-  name: tag
-  type: 1
-- default: 'false'
-  description: VM is required to be deployed to a node marked with tag specified above.
-  name: tag-required
-  type: 1
-- default: default
-  description: When set to 'most-allocated', the deployed VM will be scheduled to
-    nodes having most of their resources allocated.
-  name: scheduler
-  type: 1
-- description: 'The script to run inside of the VM. The script will be prepended with
-    the following
+      "
+    name: vcpu-count
+    required: false
+    type: 1
+    value: ""
+  - default: "false"
+    description: Enables or disables VNC for the VM.
+    name: vnc-console
+    required: false
+    type: 1
+    value: ""
+  - default: ""
+    description:
+      "\"Inject custom metadata to the VM (on Intel nodes only). You need\
+      \ to provide the metadata in format:\n[\n  { key: firstKey, value: firstValue\
+      \ },\n  { key: secondKey, value: secondsValue }\n]\"\n"
+    name: vm-metadata
+    required: false
+    type: 1
+    value: ""
+  - default: ""
+    description:
+      Assign an owned macOS system serial number to the VM (on Intel nodes
+      only).
+    name: system-serial
+    required: false
+    type: 1
+    value: ""
+  - default: "false"
+    description: Enables or disables GPU passthrough for the VM (on Intel nodes only).
+    name: gpu-passthrough
+    required: false
+    type: 1
+    value: ""
+  - default: ""
+    description:
+      When specified, the VM is preferred to be deployed to a node marked
+      with this tag.
+    name: tag
+    required: false
+    type: 1
+    value: ""
+  - default: "false"
+    description: VM is required to be deployed to a node marked with tag specified above.
+    name: tag-required
+    required: false
+    type: 1
+    value: ""
+  - default: default
+    description:
+      When set to 'most-allocated', the deployed VM will be scheduled to
+      nodes having most of their resources allocated.
+    name: scheduler
+    required: false
+    type: 1
+    value: ""
+  - description:
+      "The script to run inside of the VM. The script will be prepended with
+      the following
 
-    if no shebang is present:
-
-
-    #!/bin/sh
-
-    set -ex
-
-
-    You can set your shebang instead (e.g., to run a script with your preferred shell
-    or a scripting language like Python or Ruby).
-
-    '
-  name: script
-  type: 1
-- default: 'true'
-  description: 'Specifies whether to copy build artifacts from the Orka VM back to
-    the workspace.
-
-    Disable when there is no need to copy build artifacts (e.g., when running tests
-    or linting code).
-
-    '
-  name: copy-build
-  type: 1
-- default: 'false'
-  description: Enables verbose logging for all connection activity to the VM.
-  name: verbose
-  type: 1
-- default: orka-creds
-  description: The name of the secret holding your Orka credentials.
-  name: orka-creds-secret
-  type: 1
-- default: email
-  description: 'The name of the key in the Orka user credentials secret for the email
-    address associated with the Orka user.
-
-    '
-  name: orka-creds-email-key
-  type: 1
-- default: password
-  description: 'The name of the key in the Orka credentials secret for the password
-    associated with the Orka user.
-
-    '
-  name: orka-creds-password-key
-  type: 1
-- default: 'false'
-  description: 'Specifies whether the SSH credentials secret contains an SSH key,
-    as opposed to a password.
-
-    '
-  name: ssh-key
-  type: 1
-- default: orka-ssh-creds
-  description: The name of the secret holding your VM SSH credentials.
-  name: ssh-secret
-  type: 1
-- default: username
-  description: 'The name of the key in the VM SSH credentials secret for the username
-    associated with the macOS VM.
-
-    '
-  name: ssh-username-key
-  type: 1
-- default: password
-  description: 'The name of the key in the VM SSH credentials secret for the password
-
-    associated with the macOS VM.
+      if no shebang is present:
 
 
-    If ssh-key is true, this parameter should specify the name of the key in
+      #!/bin/sh
 
-    the VM SSH credentials secret that holds the private SSH key.
+      set -ex
 
-    '
-  name: ssh-password-key
-  type: 1
-- default: /tekton/home
-  description: Absolute path to the user's home directory.
-  name: user-home
-  type: 1
+
+      You can set your shebang instead (e.g., to run a script with your preferred shell
+      or a scripting language like Python or Ruby).
+
+      "
+    name: script
+    required: false
+    type: 1
+    value: ""
+  - default: "true"
+    description:
+      "Specifies whether to copy build artifacts from the Orka VM back to
+      the workspace.
+
+      Disable when there is no need to copy build artifacts (e.g., when running tests
+      or linting code).
+
+      "
+    name: copy-build
+    required: false
+    type: 1
+    value: ""
+  - default: "false"
+    description: Enables verbose logging for all connection activity to the VM.
+    name: verbose
+    required: false
+    type: 1
+    value: ""
+  - default: orka-creds
+    description: The name of the secret holding your Orka credentials.
+    name: orka-creds-secret
+    required: false
+    type: 1
+    value: ""
+  - default: email
+    description:
+      "The name of the key in the Orka user credentials secret for the email
+      address associated with the Orka user.
+
+      "
+    name: orka-creds-email-key
+    required: false
+    type: 1
+    value: ""
+  - default: password
+    description:
+      "The name of the key in the Orka credentials secret for the password
+      associated with the Orka user.
+
+      "
+    name: orka-creds-password-key
+    required: false
+    type: 1
+    value: ""
+  - default: "false"
+    description:
+      "Specifies whether the SSH credentials secret contains an SSH key,
+      as opposed to a password.
+
+      "
+    name: ssh-key
+    required: false
+    type: 1
+    value: ""
+  - default: orka-ssh-creds
+    description: The name of the secret holding your VM SSH credentials.
+    name: ssh-secret
+    required: false
+    type: 1
+    value: ""
+  - default: username
+    description:
+      "The name of the key in the VM SSH credentials secret for the username
+      associated with the macOS VM.
+
+      "
+    name: ssh-username-key
+    required: false
+    type: 1
+    value: ""
+  - default: password
+    description:
+      "The name of the key in the VM SSH credentials secret for the password
+
+      associated with the macOS VM.
+
+
+      If ssh-key is true, this parameter should specify the name of the key in
+
+      the VM SSH credentials secret that holds the private SSH key.
+
+      "
+    name: ssh-password-key
+    required: false
+    type: 1
+    value: ""
+  - default: /tekton/home
+    description: Absolute path to the user's home directory.
+    name: user-home
+    required: false
+    type: 1
+    value: ""
 visibility:
   showToUser: true

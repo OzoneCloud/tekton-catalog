@@ -1,6 +1,8 @@
 params:
-- description: Go package to analyze.
-  name: package
-  type: 1
+  - description: Go package to analyze.
+    name: package
+    required: false
+    type: 1
+    value: ""
 visibility:
   showToUser: true

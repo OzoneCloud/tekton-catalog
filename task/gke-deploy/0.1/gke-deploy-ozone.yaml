@@ -3,6 +3,8 @@ params:
       - --help
     description: gke-deploy CLI arguments to run
     name: ARGS
+    required: false
     type: array
+    value: ""
 visibility:
   showToUser: false

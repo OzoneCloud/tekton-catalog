@@ -1,6 +1,8 @@
 params:
   - description: branch to checkout to create a version for e.g. "develop"
     name: branch
+    required: false
     type: 1
+    value: ""
 visibility:
   showToUser: true

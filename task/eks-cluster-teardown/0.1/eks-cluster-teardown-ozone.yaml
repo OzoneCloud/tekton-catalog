@@ -1,10 +1,14 @@
 params:
-- description: The name of the EKS cluster which will be teared down.
-  name: cluster-name
-  type: 1
-- default: us-west-2
-  description: The region where the cluster is in.
-  name: region
-  type: 1
+  - description: The name of the EKS cluster which will be teared down.
+    name: cluster-name
+    required: false
+    type: 1
+    value: ""
+  - default: us-west-2
+    description: The region where the cluster is in.
+    name: region
+    required: false
+    type: 1
+    value: ""
 visibility:
   showToUser: true

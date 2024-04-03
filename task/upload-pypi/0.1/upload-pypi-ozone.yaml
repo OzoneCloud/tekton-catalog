@@ -2,6 +2,8 @@ params:
   - default: https://upload.pypi.org/legacy/
     description: The repository (package index) to upload the package to.
     name: TWINE_REPOSITORY_URL
+    required: false
     type: 1
+    value: ""
 visibility:
   showToUser: true

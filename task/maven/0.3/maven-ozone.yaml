@@ -2,53 +2,77 @@ params:
   - default: gcr.io/cloud-builders/mvn@sha256:57523fc43394d6d9d2414ee8d1c85ed7a13460cbb268c3cd16d28cfb3859e641
     description: Maven base image
     name: MAVEN_IMAGE
+    required: false
     type: 1
+    value: ""
   - default:
       - package
     description: maven goals to run
     name: GOALS
+    required: false
     type: array
+    value: ""
   - default: ""
     description: The Maven repository mirror url
     name: MAVEN_MIRROR_URL
+    required: false
     type: 1
+    value: ""
   - default: ""
     description: The username for the server
     name: SERVER_USER
+    required: false
     type: 1
+    value: ""
   - default: ""
     description: The password for the server
     name: SERVER_PASSWORD
+    required: false
     type: 1
+    value: ""
   - default: ""
     description: The username for the proxy server
     name: PROXY_USER
+    required: false
     type: 1
+    value: ""
   - default: ""
     description: The password for the proxy server
     name: PROXY_PASSWORD
+    required: false
     type: 1
+    value: ""
   - default: ""
     description: Port number for the proxy server
     name: PROXY_PORT
+    required: false
     type: 1
+    value: ""
   - default: ""
     description: Proxy server Host
     name: PROXY_HOST
+    required: false
     type: 1
+    value: ""
   - default: ""
     description: Non proxy server host
     name: PROXY_NON_PROXY_HOSTS
+    required: false
     type: 1
+    value: ""
   - default: http
     description: Protocol for the proxy ie http or https
     name: PROXY_PROTOCOL
+    required: false
     type: 1
+    value: ""
   - default: .
     description:
       The context directory within the repository for sources on which we
       want to execute maven goals.
     name: CONTEXT_DIR
+    required: false
     type: 1
+    value: ""
 visibility:
   showToUser: false

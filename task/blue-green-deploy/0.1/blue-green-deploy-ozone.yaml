@@ -1,14 +1,21 @@
 params:
-- description: Name of the service which is pointing to existing deployment
-  name: SERVICE_NAME
-  type: 1
-- description: The version of newer deployment which is to be patched to existing
-    service
-  name: NEW_VERSION
-  type: 1
-- default: .
-  description: The newer version of the deployment to be deployed in another zone
-  name: MANIFEST
-  type: 1
+  - description: Name of the service which is pointing to existing deployment
+    name: SERVICE_NAME
+    required: false
+    type: 1
+    value: ""
+  - description:
+      The version of newer deployment which is to be patched to existing
+      service
+    name: NEW_VERSION
+    required: false
+    type: 1
+    value: ""
+  - default: .
+    description: The newer version of the deployment to be deployed in another zone
+    name: MANIFEST
+    required: false
+    type: 1
+    value: ""
 visibility:
   showToUser: true

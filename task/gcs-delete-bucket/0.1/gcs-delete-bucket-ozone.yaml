@@ -3,7 +3,9 @@ params:
 
       '
     name: bucketName
+    required: false
     type: 1
+    value: ""
   - default: service_account.json
     description:
       "The path inside the credentials workspace to the GOOGLE_APPLICATION_CREDENTIALS
@@ -11,6 +13,8 @@ params:
 
       "
     name: serviceAccountPath
+    required: false
     type: 1
+    value: ""
 visibility:
   showToUser: true

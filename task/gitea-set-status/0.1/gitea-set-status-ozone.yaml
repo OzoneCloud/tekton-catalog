@@ -1,85 +1,116 @@
 params:
-- description: 'The Gitea host, e.g: git.yourcompany.com. Can include port.
+  - description: "The Gitea host, e.g: git.yourcompany.com. Can include port.
 
-    '
-  name: GITEA_HOST_URL
-  type: 1
-- default: https
-  description: 'If we should connect with HTTP or HTTPS. Use "http" or "https" here.
+      "
+    name: GITEA_HOST_URL
+    required: false
+    type: 1
+    value: ""
+  - default: https
+    description:
+      'If we should connect with HTTP or HTTPS. Use "http" or "https" here.
 
-    '
-  name: GITEA_HTTPS_OR_HTTP
-  type: 1
-- default: /api/v1
-  description: 'The API path prefix of Gitea, default: /api/v1
+      '
+    name: GITEA_HTTPS_OR_HTTP
+    required: false
+    type: 1
+    value: ""
+  - default: /api/v1
+    description: "The API path prefix of Gitea, default: /api/v1
 
-    '
-  name: API_PATH_PREFIX
-  type: 1
-- description: 'The Gitea repository full name, e.g.: tektoncd/catalog
+      "
+    name: API_PATH_PREFIX
+    required: false
+    type: 1
+    value: ""
+  - description: "The Gitea repository full name, e.g.: tektoncd/catalog
 
-    '
-  name: REPO_FULL_NAME
-  type: 1
-- default: gitea
-  description: 'The name of the kubernetes secret that contains the Gitea token, default:
-    gitea
+      "
+    name: REPO_FULL_NAME
+    required: false
+    type: 1
+    value: ""
+  - default: gitea
+    description:
+      "The name of the kubernetes secret that contains the Gitea token, default:
+      gitea
 
-    '
-  name: GITEA_TOKEN_SECRET_NAME
-  type: 1
-- default: token
-  description: 'The key within the kubernetes secret that contains the Gitea token,
-    default: token
+      "
+    name: GITEA_TOKEN_SECRET_NAME
+    required: false
+    type: 1
+    value: ""
+  - default: token
+    description:
+      "The key within the kubernetes secret that contains the Gitea token,
+      default: token
 
-    '
-  name: GITEA_TOKEN_SECRET_KEY
-  type: 1
-- description: 'Commit SHA to set the status for.
+      "
+    name: GITEA_TOKEN_SECRET_KEY
+    required: false
+    type: 1
+    value: ""
+  - description: "Commit SHA to set the status for.
 
-    '
-  name: SHA
-  type: 1
-- description: 'The target URL to associate with this status. This URL will be linked
+      "
+    name: SHA
+    required: false
+    type: 1
+    value: ""
+  - description:
+      "The target URL to associate with this status. This URL will be linked
 
-    from the Gitea UI to allow users to easily see the source of the
+      from the Gitea UI to allow users to easily see the source of the
 
-    status.
+      status.
 
-    '
-  name: TARGET_URL
-  type: 1
-- description: 'A short description of the status.
+      "
+    name: TARGET_URL
+    required: false
+    type: 1
+    value: ""
+  - description: "A short description of the status.
 
-    '
-  name: DESCRIPTION
-  type: 1
-- default: continuous-integration/tekton
-  description: 'The Gitea context, A string label to differentiate this status from
+      "
+    name: DESCRIPTION
+    required: false
+    type: 1
+    value: ""
+  - default: continuous-integration/tekton
+    description:
+      'The Gitea context, A string label to differentiate this status from
 
-    the status of other systems. ie: "continuous-integration/tekton"
+      the status of other systems. ie: "continuous-integration/tekton"
 
-    '
-  name: CONTEXT
-  type: 1
-- description: 'The state of the status. Can be one of the following `error`,
+      '
+    name: CONTEXT
+    required: false
+    type: 1
+    value: ""
+  - description: "The state of the status. Can be one of the following `error`,
 
-    `failure`, `pending`, `warning` or `success`.
+      `failure`, `pending`, `warning` or `success`.
 
-    '
-  name: STATE
-  type: 1
-- default: python:3.10.1-alpine3.15@sha256:affe0faa14e7553fc570beec3864e74b5e36f8c19b2bb49ae8ba79c0e9e7236e
-  description: 'Image providing the python binary which this task uses.
+      "
+    name: STATE
+    required: false
+    type: 1
+    value: ""
+  - default: python:3.10.1-alpine3.15@sha256:affe0faa14e7553fc570beec3864e74b5e36f8c19b2bb49ae8ba79c0e9e7236e
+    description: "Image providing the python binary which this task uses.
 
-    '
-  name: IMAGE
-  type: 1
-- default: /usr/bin/env python
-  description: 'Python path. Depends on the image.
+      "
+    name: IMAGE
+    required: false
+    type: 1
+    value: ""
+  - default: /usr/bin/env python
+    description: "Python path. Depends on the image.
 
-    '
-  name: SHEBANG
-  type: 1
+      "
+    name: SHEBANG
+    required: false
+    type: 1
+    value: ""
 visibility:
   showToUser: true

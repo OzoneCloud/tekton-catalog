@@ -1,15 +1,21 @@
 params:
-- default: latest
-  description: The tag for the Powershell image
-  name: tag
-  type: 1
-- default: Write-Output 'Please use command parameter to enter'
-  description: The Powershell command
-  name: command
-  type: 1
-- default: SilentlyContinue
-  description: Verbosity level for command
-  name: verbose
-  type: 1
+  - default: latest
+    description: The tag for the Powershell image
+    name: tag
+    required: false
+    type: 1
+    value: ""
+  - default: Write-Output 'Please use command parameter to enter'
+    description: The Powershell command
+    name: command
+    required: false
+    type: 1
+    value: ""
+  - default: SilentlyContinue
+    description: Verbosity level for command
+    name: verbose
+    required: false
+    type: 1
+    value: ""
 visibility:
   showToUser: true

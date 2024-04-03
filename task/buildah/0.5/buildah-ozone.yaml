@@ -1,43 +1,64 @@
 params:
-- description: Reference of the image buildah will produce.
-  name: IMAGE
-  type: 1
-- default: quay.io/buildah/stable:v1.23.3
-  description: The location of the buildah builder image.
-  name: BUILDER_IMAGE
-  type: 1
-- default: overlay
-  description: Set buildah storage driver
-  name: STORAGE_DRIVER
-  type: 1
-- default: ./Dockerfile
-  description: Path to the Dockerfile to build.
-  name: DOCKERFILE
-  type: 1
-- default: .
-  description: Path to the directory to use as context.
-  name: CONTEXT
-  type: 1
-- default: 'true'
-  description: Verify the TLS on the registry endpoint (for push/pull to a non-TLS
-    registry)
-  name: TLSVERIFY
-  type: 1
-- default: oci
-  description: The format of the built container, oci or docker
-  name: FORMAT
-  type: 1
-- default: ''
-  description: Extra parameters passed for the build command when building images.
-  name: BUILD_EXTRA_ARGS
-  type: 1
-- default: ''
-  description: Extra parameters passed for the push command when pushing images.
-  name: PUSH_EXTRA_ARGS
-  type: 1
-- default: 'false'
-  description: Skip pushing the built image
-  name: SKIP_PUSH
-  type: 1
+  - description: Reference of the image buildah will produce.
+    name: IMAGE
+    required: false
+    type: 1
+    value: ""
+  - default: quay.io/buildah/stable:v1.23.3
+    description: The location of the buildah builder image.
+    name: BUILDER_IMAGE
+    required: false
+    type: 1
+    value: ""
+  - default: overlay
+    description: Set buildah storage driver
+    name: STORAGE_DRIVER
+    required: false
+    type: 1
+    value: ""
+  - default: ./Dockerfile
+    description: Path to the Dockerfile to build.
+    name: DOCKERFILE
+    required: false
+    type: 1
+    value: ""
+  - default: .
+    description: Path to the directory to use as context.
+    name: CONTEXT
+    required: false
+    type: 1
+    value: ""
+  - default: "true"
+    description:
+      Verify the TLS on the registry endpoint (for push/pull to a non-TLS
+      registry)
+    name: TLSVERIFY
+    required: false
+    type: 1
+    value: ""
+  - default: oci
+    description: The format of the built container, oci or docker
+    name: FORMAT
+    required: false
+    type: 1
+    value: ""
+  - default: ""
+    description: Extra parameters passed for the build command when building images.
+    name: BUILD_EXTRA_ARGS
+    required: false
+    type: 1
+    value: ""
+  - default: ""
+    description: Extra parameters passed for the push command when pushing images.
+    name: PUSH_EXTRA_ARGS
+    required: false
+    type: 1
+    value: ""
+  - default: "false"
+    description: Skip pushing the built image
+    name: SKIP_PUSH
+    required: false
+    type: 1
+    value: ""
 visibility:
   showToUser: true

@@ -1,38 +1,56 @@
 params:
-- description: base package to build in
-  name: package
-  type: 1
-- default: ./cmd/...
-  description: 'packages to build (default: ./cmd/...)'
-  name: packages
-  type: 1
-- default: latest
-  description: golang version to use for builds
-  name: version
-  type: 1
-- default: -v
-  description: flags to use for the test command
-  name: flags
-  type: 1
-- default: linux
-  description: running program's operating system target
-  name: GOOS
-  type: 1
-- default: amd64
-  description: running program's architecture target
-  name: GOARCH
-  type: 1
-- default: auto
-  description: value of module support
-  name: GO111MODULE
-  type: 1
-- default: ''
-  description: Go caching directory path
-  name: GOCACHE
-  type: 1
-- default: ''
-  description: Go mod caching directory path
-  name: GOMODCACHE
-  type: 1
+  - description: base package to build in
+    name: package
+    required: false
+    type: 1
+    value: ""
+  - default: ./cmd/...
+    description: "packages to build (default: ./cmd/...)"
+    name: packages
+    required: false
+    type: 1
+    value: ""
+  - default: latest
+    description: golang version to use for builds
+    name: version
+    required: false
+    type: 1
+    value: ""
+  - default: -v
+    description: flags to use for the test command
+    name: flags
+    required: false
+    type: 1
+    value: ""
+  - default: linux
+    description: running program's operating system target
+    name: GOOS
+    required: false
+    type: 1
+    value: ""
+  - default: amd64
+    description: running program's architecture target
+    name: GOARCH
+    required: false
+    type: 1
+    value: ""
+  - default: auto
+    description: value of module support
+    name: GO111MODULE
+    required: false
+    type: 1
+    value: ""
+  - default: ""
+    description: Go caching directory path
+    name: GOCACHE
+    required: false
+    type: 1
+    value: ""
+  - default: ""
+    description: Go mod caching directory path
+    name: GOMODCACHE
+    required: false
+    type: 1
+    value: ""
 visibility:
   showToUser: true

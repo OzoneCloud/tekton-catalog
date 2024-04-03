@@ -1,12 +1,18 @@
 params:
-- description: Name of the secret with incoming webhook URL
-  name: webhook-url-secret
-  type: 1
-- description: Key in the secret
-  name: webhook-url-secret-key
-  type: 1
-- description: The message to notify about
-  name: message
-  type: 1
+  - description: Name of the secret with incoming webhook URL
+    name: webhook-url-secret
+    required: false
+    type: 1
+    value: ""
+  - description: Key in the secret
+    name: webhook-url-secret-key
+    required: false
+    type: 1
+    value: ""
+  - description: The message to notify about
+    name: message
+    required: false
+    type: 1
+    value: ""
 visibility:
   showToUser: true

@@ -1,30 +1,44 @@
 params:
-- description: The directory in source that contains the helm chart
-  name: charts_dir
-  type: 1
-- default: v1.0.0
-  description: The helm release version in semantic versioning format
-  name: release_version
-  type: 1
-- default: helm-release
-  description: The helm release name
-  name: release_name
-  type: 1
-- default: ''
-  description: The helm release namespace
-  name: release_namespace
-  type: 1
-- default: ''
-  description: 'Specify the values you want to overwrite, comma separated: autoscaling.enabled=true,replicas=1'
-  name: overwrite_values
-  type: 1
-- default: values.yaml
-  description: The values file to be used
-  name: values_file
-  type: 1
-- default: docker.io/lachlanevenson/k8s-helm@sha256:5c792f29950b388de24e7448d378881f68b3df73a7b30769a6aa861061fd08ae
-  description: helm image to be used
-  name: helm_image
-  type: 1
+  - description: The directory in source that contains the helm chart
+    name: charts_dir
+    required: false
+    type: 1
+    value: ""
+  - default: v1.0.0
+    description: The helm release version in semantic versioning format
+    name: release_version
+    required: false
+    type: 1
+    value: ""
+  - default: helm-release
+    description: The helm release name
+    name: release_name
+    required: false
+    type: 1
+    value: ""
+  - default: ""
+    description: The helm release namespace
+    name: release_namespace
+    required: false
+    type: 1
+    value: ""
+  - default: ""
+    description: "Specify the values you want to overwrite, comma separated: autoscaling.enabled=true,replicas=1"
+    name: overwrite_values
+    required: false
+    type: 1
+    value: ""
+  - default: values.yaml
+    description: The values file to be used
+    name: values_file
+    required: false
+    type: 1
+    value: ""
+  - default: docker.io/lachlanevenson/k8s-helm@sha256:5c792f29950b388de24e7448d378881f68b3df73a7b30769a6aa861061fd08ae
+    description: helm image to be used
+    name: helm_image
+    required: false
+    type: 1
+    value: ""
 visibility:
   showToUser: true

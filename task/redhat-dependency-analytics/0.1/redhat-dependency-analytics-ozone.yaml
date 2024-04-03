@@ -1,18 +1,26 @@
 params:
-- description: Path to target manifest file within the project directory.
-  name: manifest-file-path
-  type: 1
-- default: project-package
-  description: Path to directory within workspace, where the project is installed.
-  name: project-directory-path
-  type: 1
-- default: redhat-dependency-analytics-report.json
-  description: Path to file within workspace, where the analysis report is saved.
-  name: output-file-path
-  type: 1
-- default: quay.io/ecosystem-appeng/exhort-javascript-api:0.7.0-alpha
-  description: Image where Exhort Javascript API and required dependencies are installed.
-  name: image
-  type: 1
+  - description: Path to target manifest file within the project directory.
+    name: manifest-file-path
+    required: false
+    type: 1
+    value: ""
+  - default: project-package
+    description: Path to directory within workspace, where the project is installed.
+    name: project-directory-path
+    required: false
+    type: 1
+    value: ""
+  - default: redhat-dependency-analytics-report.json
+    description: Path to file within workspace, where the analysis report is saved.
+    name: output-file-path
+    required: false
+    type: 1
+    value: ""
+  - default: quay.io/ecosystem-appeng/exhort-javascript-api:0.7.0-alpha
+    description: Image where Exhort Javascript API and required dependencies are installed.
+    name: image
+    required: false
+    type: 1
+    value: ""
 visibility:
   showToUser: true

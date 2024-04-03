@@ -3,10 +3,14 @@ params:
       - --help
     description: The terraform cli commands to tun
     name: ARGS
+    required: false
     type: array
+    value: ""
   - default: terraform-creds
     description: The terraform secret with credentials
     name: terraform-secret
+    required: false
     type: 1
+    value: ""
 visibility:
   showToUser: false

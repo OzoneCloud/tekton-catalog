@@ -1,11 +1,15 @@
 params:
-- default: Dockerfile
-  description: The name of the Dockerfile
-  name: DOCKERFILE
-  type: 1
-- default: docker.io/moby/buildkit:v0.6.2@sha256:db234cf7362aef489e4273a6937794cb19c09ba15c7ee0ec6f85044086ea4f6a
-  description: The name of the BuildKit image
-  name: BUILDKIT_IMAGE
-  type: 1
+  - default: Dockerfile
+    description: The name of the Dockerfile
+    name: DOCKERFILE
+    required: false
+    type: 1
+    value: ""
+  - default: docker.io/moby/buildkit:v0.6.2@sha256:db234cf7362aef489e4273a6937794cb19c09ba15c7ee0ec6f85044086ea4f6a
+    description: The name of the BuildKit image
+    name: BUILDKIT_IMAGE
+    required: false
+    type: 1
+    value: ""
 visibility:
   showToUser: true

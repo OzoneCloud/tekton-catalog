@@ -6,6 +6,8 @@ params:
 
       "
     name: region
+    required: false
     type: 1
+    value: ""
 visibility:
   showToUser: true

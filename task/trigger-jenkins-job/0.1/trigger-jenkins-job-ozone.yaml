@@ -1,18 +1,26 @@
 params:
   - description: Server URL on which Jenkins is running
     name: JENKINS_HOST_URL
+    required: false
     type: 2002
+    value: ""
   - description: Jenkins Job which needs to be triggered
     name: JOB_NAME
+    required: false
     type: 1
+    value: ""
   - default: jenkins-credentials
     description: Jenkins secret containing credentials
     name: JENKINS_SECRETS
+    required: false
     type: 1
+    value: ""
   - default:
       - ""
     description: Extra arguments to append as a part of CURL request
     name: JOB_PARAMS
+    required: false
     type: array
+    value: ""
 visibility:
   showToUser: false

@@ -1,13 +1,17 @@
 params:
   - description: The Orka base image to use for the VM config.
     name: base-image
+    required: false
     type: 1
+    value: ""
   - default: docker.io/macstadium/orka-tekton-runner:2020-10-23-a93757dc-0.1@sha256:e8ed3370dcb91cdb8bcd4e9a7e9f6652879d80acdab9644cda69a98cd8c93339
     description: "The name of the docker image which runs the task step.
 
       "
     name: orka-image
+    required: false
     type: 1
+    value: ""
   - default: "3"
     description:
       "The number of CPU cores to dedicate for the VM. Must be 3, 4, 6, 8,
@@ -15,7 +19,9 @@ params:
 
       "
     name: cpu-count
+    required: false
     type: 1
+    value: ""
   - default: "3"
     description:
       "The number of vCPUs for the VM. Must equal the number of CPUs, when
@@ -25,11 +31,15 @@ params:
 
       "
     name: vcpu-count
+    required: false
     type: 1
+    value: ""
   - default: "false"
     description: Enables or disables VNC for the VM.
     name: vnc-console
+    required: false
     type: 1
+    value: ""
   - description:
       "The script to run inside of the VM. The script will be prepended with
       the following
@@ -47,7 +57,9 @@ params:
 
       "
     name: script
+    required: false
     type: 1
+    value: ""
   - default: "true"
     description:
       "Specifies whether to copy build artifacts from the Orka VM back to
@@ -58,15 +70,21 @@ params:
 
       "
     name: copy-build
+    required: false
     type: 1
+    value: ""
   - default: "false"
     description: Enables verbose logging for all connection activity to the VM.
     name: verbose
+    required: false
     type: 1
+    value: ""
   - default: orka-creds
     description: The name of the secret holding your Orka credentials.
     name: orka-creds-secret
+    required: false
     type: 1
+    value: ""
   - default: email
     description:
       "The name of the key in the Orka user credentials secret for the email
@@ -74,7 +92,9 @@ params:
 
       "
     name: orka-creds-email-key
+    required: false
     type: 1
+    value: ""
   - default: password
     description:
       "The name of the key in the Orka credentials secret for the password
@@ -82,7 +102,9 @@ params:
 
       "
     name: orka-creds-password-key
+    required: false
     type: 1
+    value: ""
   - default: "false"
     description:
       "Specifies whether the SSH credentials secret contains an SSH key,
@@ -90,11 +112,15 @@ params:
 
       "
     name: ssh-key
+    required: false
     type: 1
+    value: ""
   - default: orka-ssh-creds
     description: The name of the secret holding your VM SSH credentials.
     name: ssh-secret
+    required: false
     type: 1
+    value: ""
   - default: username
     description:
       "The name of the key in the VM SSH credentials secret for the username
@@ -102,7 +128,9 @@ params:
 
       "
     name: ssh-username-key
+    required: false
     type: 1
+    value: ""
   - default: password
     description:
       "The name of the key in the VM SSH credentials secret for the password
@@ -116,10 +144,14 @@ params:
 
       "
     name: ssh-password-key
+    required: false
     type: 1
+    value: ""
   - default: /tekton/home
     description: Absolute path to the user's home directory.
     name: user-home
+    required: false
     type: 1
+    value: ""
 visibility:
   showToUser: true

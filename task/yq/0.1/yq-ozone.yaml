@@ -1,10 +1,15 @@
 params:
-- description: The file to execute the expression on. Needs to be relative to the
-    source workspace.
-  name: file
-  type: 1
-- description: The yq expression to apply. Can be used to replace yaml fields.
-  name: expression
-  type: 1
+  - description:
+      The file to execute the expression on. Needs to be relative to the
+      source workspace.
+    name: file
+    required: false
+    type: 1
+    value: ""
+  - description: The yq expression to apply. Can be used to replace yaml fields.
+    name: expression
+    required: false
+    type: 1
+    value: ""
 visibility:
   showToUser: true

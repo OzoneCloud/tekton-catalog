@@ -1,72 +1,108 @@
 params:
-- description: Repository URL to clone from.
-  name: url
-  type: 1
-- default: ''
-  description: Revision to checkout. (branch, tag, sha, ref, etc...)
-  name: revision
-  type: 1
-- default: ''
-  description: Refspec to fetch before checking out revision.
-  name: refspec
-  type: 1
-- default: 'true'
-  description: Initialize and fetch git submodules.
-  name: submodules
-  type: 1
-- default: '1'
-  description: Perform a shallow clone, fetching only the most recent N commits.
-  name: depth
-  type: 1
-- default: 'true'
-  description: Set the `http.sslVerify` global git config. Setting this to `false`
-    is not advised unless you are sure that you trust your git remote.
-  name: sslVerify
-  type: 1
-- default: ca-bundle.crt
-  description: file name of mounted crt using ssl-ca-directory workspace. default
-    value is ca-bundle.crt.
-  name: crtFileName
-  type: 1
-- default: ''
-  description: Subdirectory inside the `output` Workspace to clone the repo into.
-  name: subdirectory
-  type: 1
-- default: ''
-  description: Define the directory patterns to match or exclude when performing a
-    sparse checkout.
-  name: sparseCheckoutDirectories
-  type: 1
-- default: 'true'
-  description: Clean out the contents of the destination directory if it already exists
-    before cloning.
-  name: deleteExisting
-  type: 1
-- default: ''
-  description: HTTP proxy server for non-SSL requests.
-  name: httpProxy
-  type: 1
-- default: ''
-  description: HTTPS proxy server for SSL requests.
-  name: httpsProxy
-  type: 1
-- default: ''
-  description: Opt out of proxying HTTP/HTTPS requests.
-  name: noProxy
-  type: 1
-- default: 'true'
-  description: Log the commands that are executed during `git-clone`'s operation.
-  name: verbose
-  type: 1
-- default: gcr.io/tekton-releases/github.com/tektoncd/pipeline/cmd/git-init:v0.29.0
-  description: The image providing the git-init binary that this Task runs.
-  name: gitInitImage
-  type: 1
-- default: /tekton/home
-  description: 'Absolute path to the user''s home directory.
+  - description: Repository URL to clone from.
+    name: url
+    required: false
+    type: 1
+    value: ""
+  - default: ""
+    description: Revision to checkout. (branch, tag, sha, ref, etc...)
+    name: revision
+    required: false
+    type: 1
+    value: ""
+  - default: ""
+    description: Refspec to fetch before checking out revision.
+    name: refspec
+    required: false
+    type: 1
+    value: ""
+  - default: "true"
+    description: Initialize and fetch git submodules.
+    name: submodules
+    required: false
+    type: 1
+    value: ""
+  - default: "1"
+    description: Perform a shallow clone, fetching only the most recent N commits.
+    name: depth
+    required: false
+    type: 1
+    value: ""
+  - default: "true"
+    description:
+      Set the `http.sslVerify` global git config. Setting this to `false`
+      is not advised unless you are sure that you trust your git remote.
+    name: sslVerify
+    required: false
+    type: 1
+    value: ""
+  - default: ca-bundle.crt
+    description:
+      file name of mounted crt using ssl-ca-directory workspace. default
+      value is ca-bundle.crt.
+    name: crtFileName
+    required: false
+    type: 1
+    value: ""
+  - default: ""
+    description: Subdirectory inside the `output` Workspace to clone the repo into.
+    name: subdirectory
+    required: false
+    type: 1
+    value: ""
+  - default: ""
+    description:
+      Define the directory patterns to match or exclude when performing a
+      sparse checkout.
+    name: sparseCheckoutDirectories
+    required: false
+    type: 1
+    value: ""
+  - default: "true"
+    description:
+      Clean out the contents of the destination directory if it already exists
+      before cloning.
+    name: deleteExisting
+    required: false
+    type: 1
+    value: ""
+  - default: ""
+    description: HTTP proxy server for non-SSL requests.
+    name: httpProxy
+    required: false
+    type: 1
+    value: ""
+  - default: ""
+    description: HTTPS proxy server for SSL requests.
+    name: httpsProxy
+    required: false
+    type: 1
+    value: ""
+  - default: ""
+    description: Opt out of proxying HTTP/HTTPS requests.
+    name: noProxy
+    required: false
+    type: 1
+    value: ""
+  - default: "true"
+    description: Log the commands that are executed during `git-clone`'s operation.
+    name: verbose
+    required: false
+    type: 1
+    value: ""
+  - default: gcr.io/tekton-releases/github.com/tektoncd/pipeline/cmd/git-init:v0.29.0
+    description: The image providing the git-init binary that this Task runs.
+    name: gitInitImage
+    required: false
+    type: 1
+    value: ""
+  - default: /tekton/home
+    description: "Absolute path to the user's home directory.
 
-    '
-  name: userHome
-  type: 1
+      "
+    name: userHome
+    required: false
+    type: 1
+    value: ""
 visibility:
   showToUser: true

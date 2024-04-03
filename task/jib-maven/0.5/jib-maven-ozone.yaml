@@ -1,27 +1,40 @@
 params:
-- description: Name of the image to build
-  name: IMAGE
-  type: 1
-- default: gcr.io/cloud-builders/mvn@sha256:57523fc43394d6d9d2414ee8d1c85ed7a13460cbb268c3cd16d28cfb3859e641
-  description: Maven base image
-  name: MAVEN_IMAGE
-  type: 1
-- default: .
-  description: The directory containing the app, relative to the source repository
-    root
-  name: DIRECTORY
-  type: 1
-- default: empty-dir-volume
-  description: The name of the volume for caching Maven artifacts and base image layers
-  name: CACHE
-  type: 1
-- default: 'false'
-  description: Whether to allow insecure registry
-  name: INSECUREREGISTRY
-  type: 1
-- default: service-ca.crt
-  description: CA cert file name for insecure registry service
-  name: CACERTFILE
-  type: 1
+  - description: Name of the image to build
+    name: IMAGE
+    required: false
+    type: 1
+    value: ""
+  - default: gcr.io/cloud-builders/mvn@sha256:57523fc43394d6d9d2414ee8d1c85ed7a13460cbb268c3cd16d28cfb3859e641
+    description: Maven base image
+    name: MAVEN_IMAGE
+    required: false
+    type: 1
+    value: ""
+  - default: .
+    description:
+      The directory containing the app, relative to the source repository
+      root
+    name: DIRECTORY
+    required: false
+    type: 1
+    value: ""
+  - default: empty-dir-volume
+    description: The name of the volume for caching Maven artifacts and base image layers
+    name: CACHE
+    required: false
+    type: 1
+    value: ""
+  - default: "false"
+    description: Whether to allow insecure registry
+    name: INSECUREREGISTRY
+    required: false
+    type: 1
+    value: ""
+  - default: service-ca.crt
+    description: CA cert file name for insecure registry service
+    name: CACERTFILE
+    required: false
+    type: 1
+    value: ""
 visibility:
   showToUser: true

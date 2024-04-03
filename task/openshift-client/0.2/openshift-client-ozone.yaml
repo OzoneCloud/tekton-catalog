@@ -2,10 +2,14 @@ params:
   - default: oc help
     description: The OpenShift CLI arguments to run
     name: SCRIPT
+    required: false
     type: 1
+    value: ""
   - default: "4.7"
     description: The OpenShift Version to use
     name: VERSION
+    required: false
     type: 1
+    value: ""
 visibility:
   showToUser: true

@@ -1,19 +1,27 @@
 params:
-- default: latest
-  description: Tekton operator version to be installed
-  name: OPERATOR_VERSION
-  type: 1
-- default: 'false'
-  description: If triggers needs to be installed
-  name: INSTALL_TRIGGERS
-  type: 1
-- default: 'false'
-  description: If Tekton dashboard to be installed
-  name: INSTALL_DASHBOARD
-  type: 1
-- default: 'false'
-  description: If Tekton Extension Webhooks needs to be installed
-  name: INSTALL_EXTENSION_WEBHOOKS
-  type: 1
+  - default: latest
+    description: Tekton operator version to be installed
+    name: OPERATOR_VERSION
+    required: false
+    type: 1
+    value: ""
+  - default: "false"
+    description: If triggers needs to be installed
+    name: INSTALL_TRIGGERS
+    required: false
+    type: 1
+    value: ""
+  - default: "false"
+    description: If Tekton dashboard to be installed
+    name: INSTALL_DASHBOARD
+    required: false
+    type: 1
+    value: ""
+  - default: "false"
+    description: If Tekton Extension Webhooks needs to be installed
+    name: INSTALL_EXTENSION_WEBHOOKS
+    required: false
+    type: 1
+    value: ""
 visibility:
   showToUser: true

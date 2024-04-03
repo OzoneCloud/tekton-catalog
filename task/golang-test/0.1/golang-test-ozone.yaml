@@ -1,34 +1,50 @@
 params:
   - description: package (and its children) under test
     name: package
+    required: false
     type: 1
+    value: ""
   - default: ./...
     description: "packages to test (default: ./...)"
     name: packages
+    required: false
     type: 1
+    value: ""
   - default: .
     description: path to the directory to use as context.
     name: context
+    required: false
     type: 1
+    value: ""
   - default: latest
     description: golang version to use for tests
     name: version
+    required: false
     type: 1
+    value: ""
   - default: -race -cover -v
     description: flags to use for the test command
     name: flags
+    required: false
     type: 1
+    value: ""
   - default: linux
     description: running program's operating system target
     name: GOOS
+    required: false
     type: 1
+    value: ""
   - default: amd64
     description: running program's architecture target
     name: GOARCH
+    required: false
     type: 1
+    value: ""
   - default: auto
     description: value of module support
     name: GO111MODULE
+    required: false
     type: 1
+    value: ""
 visibility:
   showToUser: true

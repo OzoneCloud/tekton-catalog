@@ -1,27 +1,35 @@
 params:
-- default: docker.io/alpine/git:v2.26.2@sha256:23618034b0be9205d9cc0846eb711b12ba4c9b468efdd8a59aac1d7b1a23363f
-  description: 'The base image for the task.
+  - default: docker.io/alpine/git:v2.26.2@sha256:23618034b0be9205d9cc0846eb711b12ba4c9b468efdd8a59aac1d7b1a23363f
+    description: "The base image for the task.
 
-    '
-  name: BASE_IMAGE
-  type: 1
-- default: ''
-  description: 'Git user name for performing git operation.
+      "
+    name: BASE_IMAGE
+    required: false
+    type: 1
+    value: ""
+  - default: ""
+    description: "Git user name for performing git operation.
 
-    '
-  name: GIT_USER_NAME
-  type: 1
-- default: ''
-  description: 'Git user email for performing git operation.
+      "
+    name: GIT_USER_NAME
+    required: false
+    type: 1
+    value: ""
+  - default: ""
+    description: "Git user email for performing git operation.
 
-    '
-  name: GIT_USER_EMAIL
-  type: 1
-- default: 'git help
+      "
+    name: GIT_USER_EMAIL
+    required: false
+    type: 1
+    value: ""
+  - default: "git help
 
-    '
-  description: The git script to run.
-  name: GIT_SCRIPT
-  type: 1
+      "
+    description: The git script to run.
+    name: GIT_SCRIPT
+    required: false
+    type: 1
+    value: ""
 visibility:
   showToUser: true

@@ -1,49 +1,71 @@
 params:
   - description: The name of where to store the app image.
     name: APP_IMAGE
+    required: false
     type: 1
+    value: ""
   - description:
       The image on which builds will run (must include lifecycle and compatible
       buildpacks).
     name: BUILDER_IMAGE
+    required: false
     type: 1
+    value: ""
   - default: ""
     description: A subpath within the `source` input where the source to build is located.
     name: SOURCE_SUBPATH
+    required: false
     type: 1
+    value: ""
   - default: []
     description: Environment variables to set during _build-time_.
     name: ENV_VARS
+    required: false
     type: array
+    value: ""
   - default: web
     description: The default process type to set on the image.
     name: PROCESS_TYPE
+    required: false
     type: 1
+    value: ""
   - default: ""
     description: Reference to a run image to use.
     name: RUN_IMAGE
+    required: false
     type: 1
+    value: ""
   - default: ""
     description:
       The name of the persistent app cache image (if no cache workspace is
       provided).
     name: CACHE_IMAGE
+    required: false
     type: 1
+    value: ""
   - default: "false"
     description: Do not write layer metadata or restore cached layers.
     name: SKIP_RESTORE
+    required: false
     type: 1
+    value: ""
   - default: "1000"
     description: The user ID of the builder image user.
     name: USER_ID
+    required: false
     type: 1
+    value: ""
   - default: "1000"
     description: The group ID of the builder image user.
     name: GROUP_ID
+    required: false
     type: 1
+    value: ""
   - default: empty-dir
     description: The name of the platform directory.
     name: PLATFORM_DIR
+    required: false
     type: 1
+    value: ""
 visibility:
   showToUser: false

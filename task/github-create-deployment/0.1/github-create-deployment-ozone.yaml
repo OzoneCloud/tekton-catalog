@@ -4,24 +4,32 @@ params:
 
       "
     name: GITHUB_HOST_URL
+    required: false
     type: 1
+    value: ""
   - description: "The GitHub repository full name, i.e: tektoncd/catalog.
 
       "
     name: REPO_FULL_NAME
+    required: false
     type: 1
+    value: ""
   - description: "The ref to deploy. This can be a branch, tag, or SHA.
 
       "
     name: REF
+    required: false
     type: 1
+    value: ""
   - default: deploy
     description:
       "Specifies a task to execute (e.g., deploy or deploy:migrations).
 
       "
     name: TASK
+    required: false
     type: 1
+    value: ""
   - default: "true"
     description: "Attempts to automatically merge the default branch into the
 
@@ -29,7 +37,9 @@ params:
 
       "
     name: AUTO_MERGE
+    required: false
     type: 1
+    value: ""
   - default: "*"
     description: 'The status contexts to verify against commit status checks. To
 
@@ -39,38 +49,50 @@ params:
 
       '
     name: REQUIRED_CONTEXTS
+    required: false
     type: 1
+    value: ""
   - default: ""
     description: "JSON payload with extra information about the deployment.
 
       "
     name: PAYLOAD
+    required: false
     type: 1
+    value: ""
   - description:
       "Name for the target deployment environment (e.g., production, staging).
 
       "
     name: ENVIRONMENT
+    required: false
     type: 1
+    value: ""
   - default: ""
     description: "Short description of the deployment.
 
       "
     name: DESCRIPTION
+    required: false
     type: 1
+    value: ""
   - default: github
     description:
       "The name of the Kubernetes Secret that contains the GitHub token.
 
       "
     name: GITHUB_TOKEN_SECRET_NAME
+    required: false
     type: 1
+    value: ""
   - default: token
     description:
       "The key within the Kubernetes Secret that contains the GitHub token.
 
       "
     name: GITHUB_TOKEN_SECRET_KEY
+    required: false
     type: 1
+    value: ""
 visibility:
   showToUser: true

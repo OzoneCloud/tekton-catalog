@@ -4,14 +4,18 @@ params:
 
       "
     name: GITHUB_HOST_URL
+    required: false
     type: 1
+    value: ""
   - default: ""
     description:
       "The API path prefix, GitHub Enterprise has a prefix e.g. /api/v3
 
       "
     name: API_PATH_PREFIX
+    required: false
     type: 1
+    value: ""
   - description:
       "The GitHub issue or pull request URL where we want to add a new
 
@@ -19,20 +23,26 @@ params:
 
       "
     name: REQUEST_URL
+    required: false
     type: 1
+    value: ""
   - default: github
     description:
       "The name of the Kubernetes Secret that contains the GitHub token.
 
       "
     name: GITHUB_TOKEN_SECRET_NAME
+    required: false
     type: 1
+    value: ""
   - default: token
     description:
       "The key within the Kubernetes Secret that contains the GitHub token.
 
       "
     name: GITHUB_TOKEN_SECRET_KEY
+    required: false
     type: 1
+    value: ""
 visibility:
   showToUser: true

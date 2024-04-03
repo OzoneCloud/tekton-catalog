@@ -2,15 +2,21 @@ params:
   - default: kubectl $@
     description: The Kubernetes CLI script to run
     name: script
+    required: false
     type: 1
+    value: ""
   - default:
       - help
     description: The Kubernetes CLI arguments to run
     name: args
+    required: false
     type: array
+    value: ""
   - default: gcr.io/cloud-builders/kubectl@sha256:8ab94be8b2b4f3d117f02d868b39540fddd225447abf4014f7ba4765cb39f753
     description: Kubectl wrapper image
     name: image
+    required: false
     type: 1
+    value: ""
 visibility:
   showToUser: false

@@ -1,12 +1,18 @@
 params:
   - default: .
     name: files
+    required: false
     type: 1
+    value: ""
   - default: stdout
     name: output
+    required: false
     type: 1
+    value: ""
   - default: []
     name: args
+    required: false
     type: array
+    value: ""
 visibility:
   showToUser: false

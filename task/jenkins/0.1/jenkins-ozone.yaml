@@ -1,17 +1,23 @@
 params:
   - description: Server URL on which Jenkins is running
     name: JENKINS_HOST_URL
+    required: false
     type: 2002
+    value: ""
   - default: jenkins-credentials
     description: Jenkins secret containing credentials
     name: JENKINS_SECRETS
+    required: false
     type: 1
+    value: ""
   - default:
       - --help
     description:
       The argument to send to the control script, see README of this task
       for details.
     name: ARGS
+    required: false
     type: array
+    value: ""
 visibility:
   showToUser: false

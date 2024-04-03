@@ -1,7 +1,9 @@
 params:
-- default: '1.0'
-  description: Base product version
-  name: base-version
-  type: 1
+  - default: "1.0"
+    description: Base product version
+    name: base-version
+    required: false
+    type: 1
+    value: ""
 visibility:
   showToUser: true

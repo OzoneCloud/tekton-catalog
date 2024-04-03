@@ -3,6 +3,8 @@ params:
       - --help
     description: extra args needs to append
     name: args
+    required: false
     type: array
+    value: ""
 visibility:
   showToUser: false

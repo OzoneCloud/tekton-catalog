@@ -1,18 +1,26 @@
 params:
-- description: base package to build in
-  name: package
-  type: 1
-- default: bot-token-github
-  description: name of the secret holding the github-token
-  name: github-token-secret
-  type: 1
-- default: bot-token
-  description: name of the secret key holding the github-token
-  name: github-token-secret-key
-  type: 1
-- default: --timeout=30m
-  description: flags to pass to `goreleaser release`
-  name: flags
-  type: 1
+  - description: base package to build in
+    name: package
+    required: false
+    type: 1
+    value: ""
+  - default: bot-token-github
+    description: name of the secret holding the github-token
+    name: github-token-secret
+    required: false
+    type: 1
+    value: ""
+  - default: bot-token
+    description: name of the secret key holding the github-token
+    name: github-token-secret-key
+    required: false
+    type: 1
+    value: ""
+  - default: --timeout=30m
+    description: flags to pass to `goreleaser release`
+    name: flags
+    required: false
+    type: 1
+    value: ""
 visibility:
   showToUser: true

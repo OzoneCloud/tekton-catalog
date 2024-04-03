@@ -2,22 +2,32 @@ params:
   - default: ""
     description: The url we want to download file from
     name: url
+    required: false
     type: 1
+    value: ""
   - default: []
     description: The directory path we want to save file to
     name: diroptions
+    required: false
     type: array
+    value: ""
   - default: []
     description: The arguments to pass to wget
     name: options
+    required: false
     type: array
+    value: ""
   - default: ""
     description: The filename we want to change our file to
     name: filename
+    required: false
     type: 1
+    value: ""
   - default: docker.io/library/buildpack-deps:stable-curl@sha256:3d5e59c47d5f82a769ad3f372cc9f86321e2e2905141bba974b75d3c08a53e8e
     description: The wget docker image to be used
     name: wget-option
+    required: false
     type: 1
+    value: ""
 visibility:
   showToUser: false
