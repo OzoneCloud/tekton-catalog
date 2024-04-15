@@ -23,5 +23,6 @@ params:
     required: false
     type: array
     value: ""
+relavancy: 1
 visibility:
   showToUser: false

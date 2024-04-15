@@ -11,5 +11,6 @@ params:
     required: false
     type: 1
     value: ""
+relavancy: 1
 visibility:
   showToUser: false
