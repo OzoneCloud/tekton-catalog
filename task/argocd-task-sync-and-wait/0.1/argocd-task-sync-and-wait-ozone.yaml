@@ -2,7 +2,7 @@ params:
   - description: name of the application to sync
     name: application-name
     required: false
-    type: 1
+    type: 12
     value: ""
   - default: HEAD
     description: the revision to sync to

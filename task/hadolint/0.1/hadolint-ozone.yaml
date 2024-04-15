@@ -9,7 +9,7 @@ params:
     description: Dockerfile path.
     name: dockerfile-path
     required: false
-    type: 1
+    type: 13
     value: ""
   - default: tty
     description:

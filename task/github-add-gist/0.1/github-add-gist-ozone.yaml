@@ -5,7 +5,7 @@ params:
       "
     name: GITHUB_HOST_URL
     required: false
-    type: 1
+    type: 502
     value: ""
   - default: ""
     description:

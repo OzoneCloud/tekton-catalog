@@ -20,7 +20,7 @@ params:
       "
     name: GIT_USER_NAME
     required: false
-    type: 1
+    type: 500
     value: ""
   - description: "Git user email to use for rebase.
 

@@ -4,7 +4,7 @@ params:
       42Crunch Platform.
     name: x42c_repository_url
     required: false
-    type: 1
+    type: 3
     value: ""
   - default: ""
     description: Source control branch name.

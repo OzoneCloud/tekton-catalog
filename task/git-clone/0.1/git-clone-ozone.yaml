@@ -2,7 +2,7 @@ params:
   - description: git url to clone
     name: url
     required: false
-    type: 1
+    type: 3
     value: ""
   - default: master
     description: "git revision to checkout (branch, tag, sha, ref\u2026)"

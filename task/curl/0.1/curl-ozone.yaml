@@ -2,7 +2,7 @@ params:
   - description: URL to curl'ed
     name: url
     required: false
-    type: 1
+    type: 3
     value: ""
   - default: []
     description: options of url

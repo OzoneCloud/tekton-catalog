@@ -5,7 +5,7 @@ params:
       "
     name: GITHUB_HOST_URL
     required: false
-    type: 1
+    type: 502
     value: ""
   - description: "The GitHub repository full name, i.e: tektoncd/catalog.
 

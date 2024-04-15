@@ -9,7 +9,7 @@ params:
   - description: The URL of the Pull Reuqest, e.g. `https://github.com/bobcatfish/catservice/pull/16`
     name: url
     required: false
-    type: 1
+    type: 3
     value: ""
   - description: The type of SCM system, currently `github` or `gitlab`
     name: provider

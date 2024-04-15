@@ -3,7 +3,7 @@ params:
     description: The url we want to download file from
     name: url
     required: false
-    type: 1
+    type: 3
     value: ""
   - default: []
     description: The directory path we want to save file to

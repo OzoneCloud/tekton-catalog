@@ -2,7 +2,7 @@ params:
   - description: Repository URL to clone from.
     name: url
     required: false
-    type: 1
+    type: 3
     value: ""
   - default: ""
     description: Revision to checkout. (branch, tag, sha, ref, etc...)
