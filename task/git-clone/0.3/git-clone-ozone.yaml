@@ -90,6 +90,6 @@ params:
     required: false
     type: 1
     value: ""
-relavancy: 1
+relavancy: 10
 visibility:
   showToUser: true
