@@ -16,7 +16,7 @@ params:
     description: extra args that needs to be appended
     name: args
     required: false
-    type: array
+    type: 1
     value: ""
 relavancy: 1
 visibility:

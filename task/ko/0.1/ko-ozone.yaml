@@ -15,7 +15,7 @@ params:
     description: additional arguments to ko build
     name: extra-args
     required: false
-    type: array
+    type: 1
     value: ""
   - description: ko environment variable which identifies where to push images
     name: KO_DOCKER_REPO

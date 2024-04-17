@@ -17,7 +17,7 @@ params:
       for details.
     name: ARGS
     required: false
-    type: array
+    type: 1
     value: ""
 relavancy: 1
 visibility:

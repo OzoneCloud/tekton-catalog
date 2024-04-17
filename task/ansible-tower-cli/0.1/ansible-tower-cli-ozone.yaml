@@ -10,7 +10,7 @@ params:
     description: The tower-cli commands to tun
     name: ARGS
     required: false
-    type: array
+    type: 1
     value: ""
   - default: ""
     description: The Ansible Tower host

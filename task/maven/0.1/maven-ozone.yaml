@@ -10,7 +10,7 @@ params:
     description: maven goals to run
     name: GOALS
     required: false
-    type: array
+    type: 1
     value: ""
   - default: ""
     description: The Maven repository mirror url

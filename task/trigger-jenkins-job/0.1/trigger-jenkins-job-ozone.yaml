@@ -20,7 +20,7 @@ params:
     description: Extra arguments to append as a part of CURL request
     name: JOB_PARAMS
     required: false
-    type: array
+    type: 1
     value: ""
 relavancy: 1
 visibility:

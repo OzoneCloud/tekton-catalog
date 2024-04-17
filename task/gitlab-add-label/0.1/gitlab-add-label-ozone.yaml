@@ -28,7 +28,7 @@ params:
       "
     name: LABELS
     required: false
-    type: array
+    type: 1
     value: ""
   - default: gitlab
     description: "Name of the secret holding the gitlab-token.

@@ -4,7 +4,7 @@ params:
       to the source workspace.
     name: files
     required: false
-    type: array
+    type: 1
     value: ""
   - description: The yq expression to apply. Can be used to replace yaml fields.
     name: expression

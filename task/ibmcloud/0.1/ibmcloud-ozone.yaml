@@ -8,7 +8,7 @@ params:
   - description: IBM Cloud CLI arguments to run
     name: ARGS
     required: false
-    type: array
+    type: 1
     value: ""
 relavancy: 1
 visibility:

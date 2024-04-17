@@ -19,7 +19,7 @@ params:
   - default: []
     name: EXTRA_ARGS
     required: false
-    type: array
+    type: 1
     value: ""
   - default: gcr.io/kaniko-project/executor:v1.5.1@sha256:c6166717f7fe0b7da44908c986137ecfeab21f31ec3992f6e128fff8a94be8a5
     description: The image on which builds will run (default is v1.5.1)

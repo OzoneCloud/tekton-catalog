@@ -21,7 +21,7 @@ params:
     description: Environment variables to set during _build-time_.
     name: ENV_VARS
     required: false
-    type: array
+    type: 1
     value: ""
   - default: web
     description: The default process type to set on the image.

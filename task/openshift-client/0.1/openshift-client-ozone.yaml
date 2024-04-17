@@ -10,7 +10,7 @@ params:
     description: The OpenShift CLI arguments to run
     name: ARGS
     required: false
-    type: array
+    type: 1
     value: ""
   - default: "4.6"
     description: The OpenShift Version to use

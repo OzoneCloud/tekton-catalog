@@ -17,7 +17,7 @@ params:
       on. Needs to be relative to the source workspace.
     name: files
     required: false
-    type: array
+    type: 1
     value: ""
   - default: ""
     description:

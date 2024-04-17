@@ -16,7 +16,7 @@ params:
     description: gcloud CLI arguments to run
     name: ARGS
     required: false
-    type: array
+    type: 1
     value: ""
   - default: gcloud $@
     description: CLI script to execute

@@ -10,7 +10,7 @@ params:
     description: The arguments to pass ansible-runner
     name: args
     required: false
-    type: array
+    type: 1
     value: ""
   - default: /tekton/home
     description: Absolute path to the user's home directory.

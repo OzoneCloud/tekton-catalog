@@ -2,7 +2,7 @@ params:
   - description: BentoML CLI arguments to run
     name: ARGS
     required: false
-    type: array
+    type: 1
     value: ""
   - default: ""
     description: BentoML CLI arguments to run

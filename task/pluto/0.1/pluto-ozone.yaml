@@ -4,7 +4,7 @@ params:
     description: The pluto commands to run
     name: ARGS
     required: false
-    type: array
+    type: 1
     value: ""
 relavancy: 1
 visibility:

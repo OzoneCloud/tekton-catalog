@@ -21,7 +21,7 @@ params:
     description: The arguments to pass to the pylint CLI.
     name: args
     required: false
-    type: array
+    type: 1
     value: ""
   - default: pip.conf
     description: The name of the custom pip config file.

@@ -2,7 +2,7 @@ params:
   - description: The Arguments to be passed to Syft command.
     name: ARGS
     required: false
-    type: array
+    type: 1
     value: ""
   - default: docker.io/anchore/syft@sha256:dd40bc09ff2bf3b860c399e7cf5c2db088e84c85937ac05fdeca3cd88fe2a728
     description: Syft image to be used
