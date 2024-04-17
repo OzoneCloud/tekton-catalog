@@ -10,8 +10,8 @@ params:
     description: AWS cli arguments to be passed
     name: ARGS
     required: false
-    type: array
+    type: 1
     value: ""
 relavancy: 1
 visibility:
-  showToUser: true
+  showToUser: false
