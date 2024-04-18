@@ -1,0 +1,18 @@
+params:
+  - default:
+      - --check
+      - .
+    description: Prettier arguments used to run Prettier.
+    name: args
+    required: false
+    type: 1
+    value: ""
+  - default: docker.io/elnebuloso/prettier:2.1.1@sha256:a42d03000e17d343f57ec156820d64934c76d9a0d2ce4abd602f92fd18d5e6d4
+    description: Prettier image used to run Prettier.
+    name: prettierImage
+    required: false
+    type: 1
+    value: ""
+relavancy: 1
+visibility:
+  showToUser: false

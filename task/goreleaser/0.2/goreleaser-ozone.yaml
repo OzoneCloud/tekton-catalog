@@ -1,0 +1,33 @@
+params:
+  - description: base package to build in
+    name: package
+    required: false
+    type: 1
+    value: ""
+  - default: bot-token-github
+    description: name of the secret holding the github-token
+    name: github-token-secret
+    required: false
+    type: 1
+    value: ""
+  - default: bot-token
+    description: name of the secret key holding the github-token
+    name: github-token-secret-key
+    required: false
+    type: 1
+    value: ""
+  - default: --timeout=30m
+    description: flags to pass to `goreleaser release`
+    name: flags
+    required: false
+    type: 1
+    value: ""
+  - default: docker.io/goreleaser/goreleaser@sha256:7197bb7cb63defc1cd5ede16df876605b4535980fe9e09f6618ad2b1101f8576
+    description: container image location for goreleaser
+    name: image
+    required: false
+    type: 1
+    value: ""
+relavancy: 1
+visibility:
+  showToUser: true

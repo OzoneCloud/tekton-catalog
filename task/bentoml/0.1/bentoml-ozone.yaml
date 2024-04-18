@@ -1,0 +1,15 @@
+params:
+  - description: BentoML CLI arguments to run
+    name: ARGS
+    required: false
+    type: 1
+    value: ""
+  - default: ""
+    description: BentoML CLI arguments to run
+    name: YATAISERVICE
+    required: false
+    type: 1
+    value: ""
+relavancy: 1
+visibility:
+  showToUser: false

@@ -1,0 +1,26 @@
+params:
+  - default: .
+    description:
+      The directory containing the app, relative to the source repository
+      root
+    name: DIRECTORY
+    required: false
+    type: 1
+    value: ""
+  - default: empty-dir-volume
+    description:
+      The name of the volume for caching Gradle artifacts, local Maven repository,
+      and base image layers
+    name: CACHE
+    required: false
+    type: 1
+    value: ""
+  - default: "false"
+    description: Whether to allow insecure registry
+    name: INSECUREREGISTRY
+    required: false
+    type: 1
+    value: ""
+relavancy: 1
+visibility:
+  showToUser: true

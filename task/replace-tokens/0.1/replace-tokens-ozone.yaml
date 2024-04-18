@@ -1,0 +1,9 @@
+params:
+  - description: The file path whose value needs to be replaced
+    name: inputFilePath
+    required: false
+    type: 1
+    value: ""
+relavancy: 1
+visibility:
+  showToUser: true

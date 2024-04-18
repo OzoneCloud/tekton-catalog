@@ -1,0 +1,41 @@
+params:
+  - default:
+      - --help
+    description: The terraform cli commands to tun
+    name: ARGS
+    required: false
+    type: 1
+    value: ""
+  - default: terraform-creds
+    description: The terraform secret with credentials
+    name: terraform-secret
+    required: false
+    type: 1
+    value: ""
+  - default: docker.io/hashicorp/terraform:light
+    description: the terraform image to use
+    name: image
+    required: false
+    type: 1
+    value: ""
+  - default: ""
+    description: HTTP proxy server for non-SSL requests
+    name: httpProxy
+    required: false
+    type: 1
+    value: ""
+  - default: ""
+    description: HTTPS proxy server for SSL requests
+    name: httpsProxy
+    required: false
+    type: 1
+    value: ""
+  - default: ""
+    description: no proxy - opt out of proxying HTTP/HTTPS requests
+    name: noProxy
+    required: false
+    type: 1
+    value: ""
+relavancy: 1
+visibility:
+  showToUser: false

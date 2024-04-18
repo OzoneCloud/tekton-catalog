@@ -1,0 +1,15 @@
+params:
+  - description: The repository URL to inspect
+    name: REPO
+    required: false
+    type: 1
+    value: ""
+  - default: github
+    description: The GitHub secret with credentials
+    name: GITHUB-OAUTH_SECRET
+    required: false
+    type: 1
+    value: ""
+relavancy: 1
+visibility:
+  showToUser: true

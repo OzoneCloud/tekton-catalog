@@ -1,0 +1,120 @@
+params:
+  - default: api.github.com
+    description: "The GitHub host, adjust this if you run a GitHub enteprise.
+
+      "
+    name: GITHUB_HOST_URL
+    required: false
+    type: 502
+    value: ""
+  - default: ""
+    description:
+      "The API path prefix, GitHub Enterprise has a prefix e.g. /api/v3
+
+      "
+    name: API_PATH_PREFIX
+    required: false
+    type: 1
+    value: ""
+  - description: "The GitHub repository full name, e.g.: tektoncd/catalog
+
+      "
+    name: REPO_FULL_NAME
+    required: false
+    type: 1
+    value: ""
+  - default: github
+    description:
+      "The name of the kubernetes secret that contains the GitHub token,
+      default: github
+
+      "
+    name: GITHUB_TOKEN_SECRET_NAME
+    required: false
+    type: 1
+    value: ""
+  - default: token
+    description:
+      "The key within the kubernetes secret that contains the GitHub token,
+      default: token
+
+      "
+    name: GITHUB_TOKEN_SECRET_KEY
+    required: false
+    type: 1
+    value: ""
+  - description: "Commit SHA to set the status for.
+
+      "
+    name: SHA
+    required: false
+    type: 1
+    value: ""
+  - description:
+      "The target URL to associate with this status. This URL will be linked
+
+      from the GitHub UI to allow users to easily see the source of the
+
+      status.
+
+      "
+    name: TARGET_URL
+    required: false
+    type: 1
+    value: ""
+  - description: "A short description of the status.
+
+      "
+    name: DESCRIPTION
+    required: false
+    type: 1
+    value: ""
+  - default: continuous-integration/tekton
+    description:
+      'The GitHub context, A string label to differentiate this status from
+
+      the status of other systems. ie: "continuous-integration/tekton"
+
+      '
+    name: CONTEXT
+    required: false
+    type: 1
+    value: ""
+  - description: "The state of the status. Can be one of the following `error`,
+
+      `failure`, `pending`, or `success`.
+
+      "
+    name: STATE
+    required: false
+    type: 1
+    value: ""
+  - default: Bearer
+    description:
+      'The type of authentication to use. You could use the less secure "Basic"
+      for example
+
+      '
+    name: AUTH_TYPE
+    required: false
+    type: 1
+    value: ""
+  - default: python:3.10.1-alpine3.15
+    description: "Image providing the python binary which this task uses.
+
+      "
+    name: IMAGE
+    required: false
+    type: 1
+    value: ""
+  - default: /usr/bin/env python
+    description: "Python path. Depends on the image.
+
+      "
+    name: SHEBANG
+    required: false
+    type: 1
+    value: ""
+relavancy: 1
+visibility:
+  showToUser: true

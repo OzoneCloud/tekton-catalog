@@ -1,0 +1,25 @@
+params:
+  - description: name of the application to sync
+    name: application-name
+    required: false
+    type: 12
+    value: ""
+  - default: HEAD
+    description: the revision to sync to
+    name: revision
+    required: false
+    type: 1
+    value: ""
+  - default: --
+    name: flags
+    required: false
+    type: 1
+    value: ""
+  - default: v2.2.2
+    name: argocd-version
+    required: false
+    type: 1
+    value: ""
+relavancy: 1
+visibility:
+  showToUser: true

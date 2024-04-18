@@ -1,0 +1,16 @@
+params:
+  - default: ""
+    description: Host URL where the sonarqube server is running
+    name: SONAR_HOST_URL
+    required: false
+    type: 1
+    value: ""
+  - default: ""
+    description: Project's unique key
+    name: SONAR_PROJECT_KEY
+    required: false
+    type: 1
+    value: ""
+relavancy: 1
+visibility:
+  showToUser: true

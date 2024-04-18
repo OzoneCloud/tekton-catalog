@@ -1,0 +1,54 @@
+params:
+  - default: ""
+    description: url from where the config file would be fetched.
+    name: config_file_url
+    required: false
+    type: 1
+    value: ""
+  - default: ""
+    description: path to config file.
+    name: config_file_path
+    required: false
+    type: 1
+    value: ""
+  - default: .
+    description: path to manifest files or manifest directory to be checked.
+    name: manifest
+    required: false
+    type: 1
+    value: ""
+  - default: ""
+    description: A string with comma separated checks to be included
+    name: includelist
+    required: false
+    type: 1
+    value: ""
+  - default: ""
+    description: A string with comma separated checks to be excluded
+    name: excludelist
+    required: false
+    type: 1
+    value: ""
+  - default: ""
+    description:
+      "provides two options (adding all built-in checks or disabling all
+      default checks): add-all-built-in and/do-not-auto-add-defaults"
+    name: default_option
+    required: false
+    type: 1
+    value: ""
+  - default: json
+    description: format in which report will be generated. (json|sarif|plain) (default:"json")
+    name: output_format
+    required: false
+    type: 1
+    value: ""
+  - default: []
+    description: args
+    name: args
+    required: false
+    type: 1
+    value: ""
+relavancy: 1
+visibility:
+  showToUser: false

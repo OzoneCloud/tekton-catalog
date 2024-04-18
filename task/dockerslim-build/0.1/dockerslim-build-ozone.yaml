@@ -1,0 +1,51 @@
+params:
+  - description: Reference of the image docker will produce.
+    name: image
+    required: false
+    type: 1
+    value: ""
+  - default: docker.io/dslim/docker-slim:1.37.2@sha256:fe0fb8114b66915eadfcff4c01959205a34a509e1ecbb291aa90980991d81727
+    description: The location of the docker builder image.
+    name: builder_image
+    required: false
+    type: 1
+    value: ""
+  - default: docker.io/library/docker:stable@sha256:18ff92d3d31725b53fa6633d60bed323effb6d5d4588be7b547078d384e0d4bf
+    description: The location of the docker push image.
+    name: push_image
+    required: false
+    type: 1
+    value: ""
+  - default: docker:dind
+    description: The location of the docker-in-docker image.
+    name: dind_image
+    required: false
+    type: 1
+    value: ""
+  - default: ./Dockerfile
+    description: Path to the Dockerfile to build.
+    name: dockerfile
+    required: false
+    type: 1
+    value: ""
+  - default: .
+    description: Path to the directory to use as context.
+    name: context
+    required: false
+    type: 1
+    value: ""
+  - default: ""
+    description: Extra parameters passed for the push command when pushing images.
+    name: push_extra_args
+    required: false
+    type: 1
+    value: ""
+  - default: ""
+    description: Allows the user to push to an insecure registry that has been specified
+    name: insecure_registry
+    required: false
+    type: 1
+    value: ""
+relavancy: 1
+visibility:
+  showToUser: true

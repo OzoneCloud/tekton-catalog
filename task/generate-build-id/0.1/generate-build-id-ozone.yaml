@@ -1,0 +1,10 @@
+params:
+  - default: "1.0"
+    description: Base product version
+    name: base-version
+    required: false
+    type: 1
+    value: ""
+relavancy: 1
+visibility:
+  showToUser: true

@@ -1,0 +1,78 @@
+params:
+  - default: "0"
+    description: "Number of commits to squash in the branch.
+
+      "
+    name: SQUASH_COUNT
+    required: false
+    type: 1
+    value: ""
+  - default: ""
+    description: "Commit message after the squash is done.
+
+      "
+    name: COMMIT_MSG
+    required: false
+    type: 1
+    value: ""
+  - description: "Git user name to use for rebase.
+
+      "
+    name: GIT_USER_NAME
+    required: false
+    type: 500
+    value: ""
+  - description: "Git user email to use for rebase.
+
+      "
+    name: GIT_USER_EMAIL
+    required: false
+    type: 1
+    value: ""
+  - default: origin
+    description: "Git remote name from which we have to pull and rebase.
+
+      "
+    name: PULL_REMOTE_NAME
+    required: false
+    type: 1
+    value: ""
+  - description: "Git remote URL from which we have to pull and rebase.
+
+      "
+    name: PULL_REMOTE_URL
+    required: false
+    type: 1
+    value: ""
+  - description: "Git branch name from which we have to pull and rebase.
+
+      "
+    name: PULL_BRANCH_NAME
+    required: false
+    type: 1
+    value: ""
+  - default: origin
+    description: "Git remote name to push after rebase.
+
+      "
+    name: PUSH_REMOTE_NAME
+    required: false
+    type: 1
+    value: ""
+  - description: "Git remote URL to push after rebase.
+
+      "
+    name: PUSH_REMOTE_URL
+    required: false
+    type: 1
+    value: ""
+  - description: "Git branch to push after rebase.
+
+      "
+    name: PUSH_BRANCH_NAME
+    required: false
+    type: 1
+    value: ""
+relavancy: 1
+visibility:
+  showToUser: true

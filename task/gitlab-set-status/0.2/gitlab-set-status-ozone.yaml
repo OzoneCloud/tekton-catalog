@@ -1,0 +1,103 @@
+params:
+  - default: gitlab.com
+    description: "The GitLab host, adjust this if you run a GitLab enterprise.
+
+      "
+    name: GITLAB_HOST_URL
+    required: false
+    type: 1
+    value: ""
+  - default: /api/v4
+    description:
+      "The API path prefix, GitLab Enterprise has a prefix e.g. /api/v4
+
+      "
+    name: API_PATH_PREFIX
+    required: false
+    type: 1
+    value: ""
+  - description: "The GitLab repository full name, e.g.: tektoncd/catalog
+
+      "
+    name: REPO_FULL_NAME
+    required: false
+    type: 1
+    value: ""
+  - default: gitlab-api-secret
+    description:
+      "The name of the kubernetes secret that contains the GitLab token,
+      default: gitlab-api-secret
+
+      "
+    name: GITLAB_TOKEN_SECRET_NAME
+    required: false
+    type: 1
+    value: ""
+  - default: token
+    description:
+      "The key within the kubernetes secret that contains the GitLab token,
+      default: token
+
+      "
+    name: GITLAB_TOKEN_SECRET_KEY
+    required: false
+    type: 1
+    value: ""
+  - description: "Commit SHA to set the status for.
+
+      "
+    name: SHA
+    required: false
+    type: 1
+    value: ""
+  - description:
+      "The target URL to associate with this status. This URL will be linked
+
+      from the GitLab UI to allow users to easily see the source of the
+
+      status.
+
+      "
+    name: TARGET_URL
+    required: false
+    type: 1
+    value: ""
+  - description: "A short description of the status.
+
+      "
+    name: DESCRIPTION
+    required: false
+    type: 1
+    value: ""
+  - default: continuous-integration/tekton
+    description:
+      'The GitLab context, A string label to differentiate this status from
+
+      the status of other systems. ie: "continuous-integration/tekton"
+
+      '
+    name: CONTEXT
+    required: false
+    type: 1
+    value: ""
+  - description:
+      "The state of the status. Can be one of the following `pending`,
+
+      `running`, `success`, `failed`, or `canceled`.
+
+      "
+    name: STATE
+    required: false
+    type: 1
+    value: ""
+  - default: ""
+    description: "The total code coverage.
+
+      "
+    name: COVERAGE
+    required: false
+    type: 1
+    value: ""
+relavancy: 1
+visibility:
+  showToUser: true

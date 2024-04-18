@@ -1,0 +1,17 @@
+params:
+  - default: gcr.io/knative-releases/knative.dev/client/cmd/kn:latest
+    description: kn CLI container image to run this task
+    name: kn-image
+    required: false
+    type: 1
+    value: ""
+  - default:
+      - help
+    description: kn CLI arguments to run
+    name: ARGS
+    required: false
+    type: 1
+    value: ""
+relavancy: 1
+visibility:
+  showToUser: false

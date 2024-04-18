@@ -1,0 +1,44 @@
+params:
+  - default: ""
+    description:
+      Platform name where the openshift cluster needs to be deployed such
+      as AWS, GCP etc
+    name: PLATFORM
+    required: false
+    type: 1
+    value: ""
+  - default: ""
+    description: Project Id required in case of gcp
+    name: PROJECT_ID
+    required: false
+    type: 1
+    value: ""
+  - description: Cluster name
+    name: CLUSTER_NAME
+    required: false
+    type: 1
+    value: ""
+  - description: Base domain of your cluster install
+    name: BASE_DOMAIN
+    required: false
+    type: 1
+    value: ""
+  - description: How many replicas for the master and worker node
+    name: REPLICAS
+    required: false
+    type: 1
+    value: ""
+  - description: Cloud Region where to install
+    name: REGION
+    required: false
+    type: 1
+    value: ""
+  - default: quay.io/openshift/origin-upi-installer:4.6
+    description: OpenShift installer base image for UPI installation
+    name: OPENSHIFT_INSTALLER_IMAGE
+    required: false
+    type: 1
+    value: ""
+relavancy: 1
+visibility:
+  showToUser: true

@@ -1,0 +1,34 @@
+params:
+  - description:
+      If "download", the state of the pull request at `url` will be fetched.
+      If "upload" then the pull request at `url` will be updated.
+    name: mode
+    required: false
+    type: 1
+    value: ""
+  - description: The URL of the Pull Reuqest, e.g. `https://github.com/bobcatfish/catservice/pull/16`
+    name: url
+    required: false
+    type: 3
+    value: ""
+  - description: The type of SCM system, currently `github` or `gitlab`
+    name: provider
+    required: false
+    type: 1
+    value: ""
+  - description:
+      The name of an opaque secret containing a key called "token" with a
+      base64 encoded SCM token
+    name: secret-key-ref
+    required: false
+    type: 1
+    value: ""
+  - default: "false"
+    description: If "true", certificate validation will be disabled
+    name: insecure-skip-tls-verify
+    required: false
+    type: 1
+    value: ""
+relavancy: 1
+visibility:
+  showToUser: true

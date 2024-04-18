@@ -1,0 +1,28 @@
+params:
+- default: ''
+  description: URL of the image to be copied to the destination registry
+  name: srcImageURL
+  required: false
+  type: 1
+  value: ''
+- default: ''
+  description: URL of the image where the image from source should be copied to
+  name: destImageURL
+  required: false
+  type: 1
+  value: ''
+- default: 'true'
+  description: Verify the TLS on the src registry endpoint
+  name: srcTLSverify
+  required: false
+  type: 1
+  value: ''
+- default: 'true'
+  description: Verify the TLS on the dest registry endpoint
+  name: destTLSverify
+  required: false
+  type: 1
+  value: ''
+relavancy: 1
+visibility:
+  showToUser: true

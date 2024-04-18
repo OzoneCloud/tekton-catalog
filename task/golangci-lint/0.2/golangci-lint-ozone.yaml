@@ -1,0 +1,63 @@
+params:
+  - description: base package (and its children) under validation
+    name: package
+    required: false
+    type: 1
+    value: ""
+  - default: .
+    description: path to the directory to use as context.
+    name: context
+    required: false
+    type: 1
+    value: ""
+  - default: --verbose
+    description: flags to use for the test command
+    name: flags
+    required: false
+    type: 1
+    value: ""
+  - default: v1.39
+    description: golangci-lint version to use
+    name: version
+    required: false
+    type: 1
+    value: ""
+  - default: linux
+    description: running operating system target
+    name: GOOS
+    required: false
+    type: 1
+    value: ""
+  - default: amd64
+    description: running architecture target
+    name: GOARCH
+    required: false
+    type: 1
+    value: ""
+  - default: auto
+    description: value of module support
+    name: GO111MODULE
+    required: false
+    type: 1
+    value: ""
+  - default: ""
+    description: Go caching directory path
+    name: GOCACHE
+    required: false
+    type: 1
+    value: ""
+  - default: ""
+    description: Go mod caching directory path
+    name: GOMODCACHE
+    required: false
+    type: 1
+    value: ""
+  - default: ""
+    description: golangci-lint cache path
+    name: GOLANGCI_LINT_CACHE
+    required: false
+    type: 1
+    value: ""
+relavancy: 1
+visibility:
+  showToUser: true

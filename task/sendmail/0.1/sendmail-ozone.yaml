@@ -1,0 +1,29 @@
+params:
+  - description: secret name for SMTP server information (url, port, password)
+    name: server
+    required: false
+    type: 1
+    value: ""
+  - description: plain text email subject
+    name: subject
+    required: false
+    type: 1
+    value: ""
+  - description: plain text email body
+    name: body
+    required: false
+    type: 1
+    value: ""
+  - description: sender email address
+    name: sender
+    required: false
+    type: 1
+    value: ""
+  - description: recipient email addresses (space delimited list)
+    name: recipients
+    required: false
+    type: 1
+    value: ""
+relavancy: 1
+visibility:
+  showToUser: true

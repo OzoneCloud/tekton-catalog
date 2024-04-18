@@ -1,0 +1,30 @@
+params:
+  - description:
+      The path to the file or directory that will be written to the output
+      workspace.
+    name: path
+    required: false
+    type: 1
+    value: ""
+  - description: The address (including "gs://") of the bucket you'd like to copy from.
+    name: location
+    required: false
+    type: 1
+    value: ""
+  - default: "false"
+    description: Set this to "true" if the location you are copying from is a directory.
+    name: typeDir
+    required: false
+    type: 1
+    value: ""
+  - default: service_account.json
+    description:
+      The path inside the credentials workspace to the GOOGLE_APPLICATION_CREDENTIALS
+      key file.
+    name: serviceAccountPath
+    required: false
+    type: 1
+    value: ""
+relavancy: 1
+visibility:
+  showToUser: true

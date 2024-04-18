@@ -1,0 +1,34 @@
+params:
+  - description: The location of the s2i builder image.
+    name: BUILDER_IMAGE
+    required: false
+    type: 1
+    value: ""
+  - description: Reference of the image S2I will produce.
+    name: IMAGE
+    required: false
+    type: 1
+    value: ""
+  - default: .
+    description: The location of the path to run s2i from.
+    name: PATH_CONTEXT
+    required: false
+    type: 1
+    value: ""
+  - default: "true"
+    description:
+      Verify the TLS on the registry endpoint (for push/pull to a non-TLS
+      registry)
+    name: TLSVERIFY
+    required: false
+    type: 1
+    value: ""
+  - default: "0"
+    description: Log level when running the S2I binary
+    name: LOGLEVEL
+    required: false
+    type: 1
+    value: ""
+relavancy: 1
+visibility:
+  showToUser: true

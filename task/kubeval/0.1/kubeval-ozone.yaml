@@ -1,0 +1,19 @@
+params:
+  - default: .
+    name: files
+    required: false
+    type: 1
+    value: ""
+  - default: stdout
+    name: output
+    required: false
+    type: 1
+    value: ""
+  - default: []
+    name: args
+    required: false
+    type: 1
+    value: ""
+relavancy: 1
+visibility:
+  showToUser: false

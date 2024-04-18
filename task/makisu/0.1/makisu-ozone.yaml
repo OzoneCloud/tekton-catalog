@@ -1,0 +1,22 @@
+params:
+  - default: /workspace
+    description: Path to the build context.
+    name: CONTEXTPATH
+    required: false
+    type: 1
+    value: ""
+  - default: index.docker.io
+    description: Registry to push image to.
+    name: PUSH_REGISTRY
+    required: false
+    type: 1
+    value: ""
+  - default: docker-registry-config
+    description: Secret containing information about the used regsitry.
+    name: REGISTRY_SECRET
+    required: false
+    type: 1
+    value: ""
+relavancy: 1
+visibility:
+  showToUser: true

@@ -1,0 +1,17 @@
+params:
+  - default: aws $@
+    description: The AWS script to run
+    name: SCRIPT
+    required: false
+    type: 1
+    value: ""
+  - default:
+      - help
+    description: AWS cli arguments to be passed
+    name: ARGS
+    required: false
+    type: 1
+    value: ""
+relavancy: 1
+visibility:
+  showToUser: false

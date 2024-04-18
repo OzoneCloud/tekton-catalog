@@ -1,0 +1,26 @@
+params:
+  - description: The Arguments to be passed to Trivy command.
+    name: ARGS
+    required: false
+    type: 1
+    value: ""
+  - default: docker.io/aquasec/trivy@sha256:944a044451791617cc0ed2ee4d1942a4f66b790d527fcd0575a6b399ccbc05a1
+    description: Trivy scanner image to be used
+    name: TRIVY_IMAGE
+    required: false
+    type: 1
+    value: ""
+  - description: Image or Path to be scanned by trivy.
+    name: IMAGE_PATH
+    required: false
+    type: 1
+    value: ""
+  - default: "false"
+    description: a flag enabling Air-Gapped mode
+    name: AIR_GAPPED_ENABLED
+    required: false
+    type: 1
+    value: ""
+relavancy: 1
+visibility:
+  showToUser: false
