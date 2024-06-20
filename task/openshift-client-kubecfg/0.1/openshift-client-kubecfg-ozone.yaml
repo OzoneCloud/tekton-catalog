@@ -10,7 +10,7 @@ params:
     description: The OpenShift CLI arguments to run
     name: ARGS
     required: false
-    type: array
+    type: 1
     value: ""
 relavancy: 1
 visibility:
