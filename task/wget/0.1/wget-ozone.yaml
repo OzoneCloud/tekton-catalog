@@ -15,7 +15,7 @@ params:
     description: The arguments to pass to wget
     name: options
     required: false
-    type: array
+    type: 1
     value: ""
   - default: ""
     description: The filename we want to change our file to
